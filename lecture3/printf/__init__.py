@@ -10,7 +10,7 @@ def exists():
 @check50.check(exists)
 def compiles():
     """hello.c compiles."""
-    check50.c.compile("hello.c", lcs50=True)
+    check50.c.compile("hello.c", lcs50=False)
 
 @check50.check(compiles)
 def veronica():
