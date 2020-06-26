@@ -15,4 +15,4 @@ def compiles():
 @check50.check(compiles)
 def goodbye_printed():
     """prints 'Goodbye, world!' """
-    check50.run("./hello")..stdout("Goodbye, world!").exit()
+    check50.run("./hello").stdout("Goodbye, world!").exit()
