@@ -13,11 +13,6 @@ def compiles():
     check50.c.compile("hello.c", lcs50=False)
 
 @check50.check(compiles)
-def veronica():
-    """responds to name Veronica."""
-    check50.run("./hello").stdin("Veronica").stdout("Veronica").exit()
-
-@check50.check(compiles)
-def brian():
-    """responds to name Brian."""
-    check50.run("./hello").stdin("Brian").stdout("Brian").exit()
+def goodbye_printed():
+    """prints 'Goodbye, world!' """
+    check50.run("./hello")..stdout("Goodbye, world!").exit()
