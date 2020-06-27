@@ -11,12 +11,4 @@ def compiles():
 
 @check50.check(compiles)
 def large_c_printed():
-    check50.run("./printf3").stdout("    ######"
-            "  ##      ##\n"
-            " #\n"
-            " #\n"
-            " #\n"
-            " #\n"
-            " #\n"
-            "  ##      ##\n"
-            "    ######\n").exit()
+    check50.run("./printf3").stdout("    ######\n").stdout("  ##      ##\n").stdout(" #\n").stdout(" #\n").stdout(" #\n").stdout(" #\n").stdout(" #\n").stdout("  ##      ##\n").stdout("    ######\n").exit()
