@@ -7,7 +7,7 @@ def exists():
 
 @check50.check(exists)
 def compiles():
-    check50.c.compile("goodbye.c", cc="gcc", cflags="-ggdb")
+    check50.c.compile("goodbye.c", cc="gcc", -O3)
 
 @check50.check(compiles)
 def goodbye_printed():
