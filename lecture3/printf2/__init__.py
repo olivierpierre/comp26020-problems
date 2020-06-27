@@ -10,5 +10,5 @@ def compiles():
     check50.c.compile("printf2.c", cc="gcc")
 
 @check50.check(compiles)
-def goodbye_printed():
+def correct_output():
     check50.run("./printf2").stdout("This should work!").exit()
