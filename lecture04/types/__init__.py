@@ -21,11 +21,11 @@ def check_type(sources_buf):
     re4 = "(unsigned\s+)?long\s+long\s+(int\s+)?variable"
 
     if re.search(re3, sources_buf) or re.search(re4, sources_buf):
-        raise check50.Failure("Could not find a declaration with the correct"
+        raise check50.Failure("Could not find a declaration with the correct "
                 "type")
 
     if not re.search(re1, sources_buf) and not re.search(re2, sources_buf):
-        raise check50.Failure("Could not find a declaration with the correct"
+        raise check50.Failure("Could not find a declaration with the correct "
                 "type")
 
 @check50.check(compiles)
