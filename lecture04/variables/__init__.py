@@ -23,6 +23,7 @@ def has_variables(sources_buf):
 
 @check50.check(exists)
 def has_format_specifier(sources_buf):
+    buf = sources_buf
     if "%d" not in buf and "%i" not in buf:
         raise check50.Failure("Could not find and integer format specifier "
                 "(%d or %i)")
