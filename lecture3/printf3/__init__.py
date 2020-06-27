@@ -10,8 +10,8 @@ def compiles():
     check50.c.compile("printf3.c", cc="gcc")
 
 @check50.check(compiles)
-def goodbye_printed():
-    check50.run("./printf3").stdout("    ######\n"
+def large_c_printed():
+    check50.run("./printf3").stdout("    ######"
             "  ##      ##\n"
             " #\n"
             " #\n"
