@@ -9,6 +9,8 @@ int_var: 42
 double_var: 24.000000
 ```
 
+The source file should be named `variables.c`.
+
 To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write it in a file named `goodbye.c`. In a terminal,
 with that file in the local directory, check with this command:

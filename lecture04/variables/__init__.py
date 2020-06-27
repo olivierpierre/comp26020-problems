@@ -18,7 +18,7 @@ def has_variables(sources_buf):
         raise check50.Failure("Could not find mention of int_var in the "
                 "source")
     if "double_var" not in sources_buf:
-        raise check50.Failure("Could not find mention of dobule_var in the"
+        raise check50.Failure("Could not find mention of double_var in the"
                 "source")
 
 @check50.check(exists)
