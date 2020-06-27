@@ -6,6 +6,7 @@ def exists():
     check50.exists("variable.c")
     with open("variable.c") as f:
         buf = f.read()
+    return buf
 
 @check50.check(exists)
 def compiles():
