@@ -12,7 +12,7 @@ def compiles():
     check50.c.compile("variable.c", cc="gcc")
 
 @check50.check(exists)
-def has_variables():
+def has_variables(buf):
 #    with open("variable.c") as f:
 #        buf = f.read()
     if "int_var" not in buf:
