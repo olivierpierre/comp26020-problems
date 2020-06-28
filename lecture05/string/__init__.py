@@ -26,7 +26,7 @@ def has_right_size(sources_buf):
         raise check50.Failure("String size not large enough")
 
 @check50.check(exists)
-def has_termination_chracter:
+def has_termination_chracter():
     string_re = "string\[9\]\s*=\s*'\\0'"
     if not re.search(string_re, sources_buf):
         raise check50.failure("Cannot find string termination character")
