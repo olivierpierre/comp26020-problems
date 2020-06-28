@@ -27,7 +27,8 @@ def has_array(sources_buf):
 @check50.check(exists)
 def has_for_loop(sources_buf):
     for_re = "for\(.*;.*;.*\)"
-    if not re.search(for_re, sources_buf):
+    for_re = "while\(.*\)"
+    if not re.search(for_re, sources_buf) and not re.search(while_re, sources_buf):
         raise check50.Failure("Did not found a for loop in sources")
 
 @check50.check(compiles)
@@ -55,6 +56,6 @@ def output_correct():
             .stdout("546 is even")\
             .stdout("54687 is odd")\
             .stdout("787 is odd")\
-            .stdout("10 is even")\
+            .stdout("88 is even")\
             .exit()
     check50.run("./array").stdout("").exit()
