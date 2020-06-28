@@ -1,4 +1,4 @@
-# Lecture 5 Problem 1
+# Lecture 6 Problem 1
 
 Write a program that takes up to 10 integers as command line parameters. These
 parameters are converted to integer types into an array of `int` named `array`.
@@ -19,6 +19,10 @@ odd as follows:
 5 is odd
 120 is even
 ```
+
+!!! note "Modulo in C"
+    The modulo operating in C is `%`, for example: `42 % 2` evaluates to `0`
+    and `41 % 2` evaluates to `1`.
 
 To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write it in a file named `array.c`. In a terminal,
