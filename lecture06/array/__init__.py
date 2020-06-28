@@ -48,7 +48,7 @@ def output_correct():
             .exit()
     check50.run("./array 5 5 120")\
             .stdout("5 is odd")\
-            .stoudt("5 is odd")\
+            .stdout("5 is odd")\
             .stdout("120 is even")\
             .exit()
     check50.run("./array 11654 16544 78789 516 7879 4658 546 54687 787 88")\
