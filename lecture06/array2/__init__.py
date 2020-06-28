@@ -35,7 +35,6 @@ def has_for_loop(sources_buf):
 def output_correct():
     check50.run("./array2 6 5 4 3 2 1").stdout("1 2 3 4 5 6").exit()
     check50.run("./array2 5 5 120").stdout("5 5 120").exit()
-    check50.run("./array2  5 120").stdout("5 5 120").exit()
     check50.run("./array2 4654 87987 16515 4987 465416 4984 4654 498498 "
             "16516 897484")\
                     .stdout("4654 4654 4984 4987 16515 16516 87987 465416 "
