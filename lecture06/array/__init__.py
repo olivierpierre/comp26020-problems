@@ -30,12 +30,6 @@ def has_for_loop(sources_buf):
     if not re.search(for_re, sources_buf):
         raise check50.Failure("Did not found a for loop in sources")
 
-@check50.check(exists)
-def has_termination_character(sources_buf):
-    array_re = "array\[9\]\s*=\s*'\\\\0'"
-    if not re.search(array_re, sources_buf):
-        raise check50.Failure("Cannot find array termination character")
-
 @check50.check(compiles)
 def output_correct():
     check50.run("./array 1 2 3 4 5 6")\
