@@ -1,4 +1,4 @@
-# Lecture 6 Problem 2
+# Lecture 6 Problem 3
 
 Write a program that takes up to 10 integers as command line parameters. These
 parameters are converted to integer types into an array of `int` named `array`.
