@@ -1,4 +1,4 @@
-# Lecture 5 Problem 1
+# Lecture 6 Problem 1
 
 Write a C program taking a year as command line parameter and printing out
 on the standard output if this year is leap or not.
@@ -18,5 +18,5 @@ or [IDE](ide.cs50.io) and write it in a file named `leap.c`. In a terminal,
 with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --log olivierpierre/comp26020-problems/master/lecture05/leap
+check50 -l --log olivierpierre/comp26020-problems/master/lecture06/leap
 ```

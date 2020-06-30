@@ -1,4 +1,4 @@
-# Lecture 6 Problem 5
+# Lecture 6 Problem 6
 
 Write a C program taking an odd integer `n` as parameter and printing an isoscele
 triangle on the standard output, with the triangle's base length being defined
