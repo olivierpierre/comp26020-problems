@@ -18,28 +18,28 @@ def output_correct():
     check50.run("./triangle 0").stdout("").exit()
 #    check50.run("./triangle 1").stdout("*").exit()
 #    check50.run("./triangle 2").stdout("*").stdout("**").exit()
-    check50.run("./triangle 5")\
-            .stdout("*")\
-            .stdout("**")\
-            .stdout("***")\
-            .stdout("****")\
-            .stdout("*****")\
-            .exit()
-    check50.run("./triangle 15")\
-            .stdout("*")\
-            .stdout("**")\
-            .stdout("***")\
-            .stdout("****")\
-            .stdout("*****")\
-            .stdout("******")\
-            .stdout("*******")\
-            .stdout("********")\
-            .stdout("*********")\
-            .stdout("**********")\
-            .stdout("***********")\
-            .stdout("************")\
-            .stdout("*************")\
-            .stdout("**************")\
-            .stdout("***************")\
-            .exit()
+#    check50.run("./triangle 5")\
+#            .stdout("*")\
+#            .stdout("**")\
+#            .stdout("***")\
+#            .stdout("****")\
+#            .stdout("*****")\
+#            .exit()
+#    check50.run("./triangle 15")\
+#            .stdout("*")\
+#            .stdout("**")\
+#            .stdout("***")\
+#            .stdout("****")\
+#            .stdout("*****")\
+#            .stdout("******")\
+#            .stdout("*******")\
+#            .stdout("********")\
+#            .stdout("*********")\
+#            .stdout("**********")\
+#            .stdout("***********")\
+#            .stdout("************")\
+#            .stdout("*************")\
+#            .stdout("**************")\
+#            .stdout("***************")\
+#            .exit()
 
