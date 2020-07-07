@@ -17,7 +17,7 @@ def compiles():
 
 @check50.check(exists)
 def has_enum(sources_buf):
-    if not re.search(re1, sources_buf, re.DOTALL | re.MULTILINE)
+    if not re.search(re1, sources_buf, re.DOTALL | re.MULTILINE):
         raise check50.Failure("Can't find the enum definition")
 
 @check50.check(compiles)
