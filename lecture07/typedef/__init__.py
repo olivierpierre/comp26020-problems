@@ -25,7 +25,7 @@ def has_typedef_struct(sources_buf):
     if not re.search("typedef struct s_rectangle {$.*} rectangle;",
             sources_buf, re.DOTALL | re.MULTILINE) and \
             "typedef struct s_rectangle rectangle;" not in sources_buf:
-        raise check50.Failure("Found no typedef for rectangle"
+        raise check50.Failure("Found no typedef for rectangle")
     if "rectangle r" not in sources_buf:
         raise check50.Failure("Found no use of rectangle"
 
