@@ -27,7 +27,7 @@ def has_typedef_struct(sources_buf):
             "typedef struct s_rectangle rectangle;" not in sources_buf:
         raise check50.Failure("Found no typedef for rectangle")
     if "rectangle r" not in sources_buf:
-        raise check50.Failure("Found no use of rectangle"
+        raise check50.Failure("Found no use of rectangle")
 
 @check50.check(compiles)
 def output_correct():
