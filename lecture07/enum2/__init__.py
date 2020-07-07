@@ -4,14 +4,14 @@ import re
 
 @check50.check()
 def exists():
-    check50.exists("enum.c")
-    with open("enum.c") as f:
+    check50.exists("enum2.c")
+    with open("enum2.c") as f:
         sources_buf = f.read()
     return sources_buf
 
 @check50.check(exists)
 def compiles():
-    check50.c.compile("enum.c", cc="gcc")
+    check50.c.compile("enum2.c", cc="gcc")
 
 @check50.check(compiles)
 def output_correct():
