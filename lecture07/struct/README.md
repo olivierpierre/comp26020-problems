@@ -21,7 +21,7 @@ sum as a timestamp. Here are some output examples:
 ./timestamp 5 11 44 12 30 3
 17 41 47
 ./timestamp 10 30 50 1 5 15
-11 36 05
+11 36 5
 ./timestamp 14 12 5 22 5 0
 36 17 5
 ```

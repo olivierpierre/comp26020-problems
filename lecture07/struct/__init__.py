@@ -31,7 +31,7 @@ def has_function(sources_buf):
 @check50.check(compiles)
 def output_correct():
     check50.run("./struct 14 12 5 22 5 0").stdout("36 17 5").exit()
-    check50.run("./struct 10 30 50 1 5 15").stdout("11 36 05").exit()
+    check50.run("./struct 10 30 50 1 5 15").stdout("11 36 5").exit()
     check50.run("./struct 5 11 44 12 30 3").stdout("17 41 47").exit()
     check50.run("./struct 51 8 4 15 2 31").stdout("66 10 35").exit()
     check50.run("./struct 0 0 0 0 0 0").stdout("0 0 0").exit()
