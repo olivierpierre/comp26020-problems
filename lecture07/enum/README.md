@@ -4,7 +4,7 @@ Write a C program defining an `enum` with one named value per month of the
 year, i.e. `JANUARY`, `FEBRUARY`, `MARCH`, etc. The program prints the numberic
 value associated with each month. Example of output:
 
-```
+```shell
 ./enum
 JANUARY: 0
 FEBRUARY: 1
