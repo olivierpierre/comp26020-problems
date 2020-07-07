@@ -1,4 +1,4 @@
-# Lecture 7 Problem 1
+# Lecture 7 Problem 2
 
 Consider the following structure:
 

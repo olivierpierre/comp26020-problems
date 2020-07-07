@@ -30,7 +30,7 @@ def output_correct():
             .stdout("JUNE")\
             .stdout("JULY")\
             .stdout("AUGUST")\
-            .stdout("SPETEMBER")\
+            .stdout("SEPTEMBER")\
             .stdout("OCTOBER")\
             .stdout("NOVERMBER")\
             .stdout("DECEMBER")\
