@@ -19,3 +19,11 @@ def output_correct():
             .stdout("Variable contains 5 and is located @0x[0-9a-f]+",
                     regex=True)\
             .exit()
+    check50.run("./pointer 156")\
+            .stdout("Variable contains 156 and is located @0x[0-9a-f]+",
+                    regex=True)\
+            .exit()
+    check50.run("./pointer 42")\
+            .stdout("Variable contains 42 and is located @0x[0-9a-f]+",
+                    regex=True)\
+            .exit()
