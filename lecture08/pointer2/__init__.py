@@ -14,7 +14,7 @@ def compiles():
     check50.c.compile("pointer2.c", cc="gcc")
 
 @check50.check(exists)
-def function_call():
+def function_call(sources_buf):
     if not re.search("add\s*\(.*\*.*,.*\*.*\)", sources_buf):
         raise check50.Failure("The add function does not seem to be defined"
                 "with pointer parameters")
