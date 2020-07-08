@@ -1,4 +1,4 @@
-# Lecture 8 Problem 3
+# Lecture 8 Problem 4
 
 With a [linked list](https://en.wikipedia.org/wiki/Linked_list), the
 programmer uses pointer chains to link together data structures. In the example
@@ -8,6 +8,7 @@ value of the last element is printed:
 ```c
 #include <stdio.h>
 
+/* Typedef struct forward declaration for the pointer member */
 typedef struct s_list_member list_member;
 
 typedef struct s_list_member {
