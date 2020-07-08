@@ -1,7 +1,7 @@
 # Lecture 7 Problem 4
 
 Enumerations can be used in C in combination with bitwise operations to define
-*flags*, .e. set of properties attached to objects, each object being able to
+*flags*, i.e. set of properties attached to objects, each object being able to
 have 0 or several properties enabled.
 
 Consider the following program:
@@ -62,8 +62,8 @@ FLAG3 enabled
 
     - bitwise AND: `&` and OR `|`
     - bitwise shift, left `<<` and right `>>`
-    - etc. For more information see the *Bitwise logic and shifts operators
-      section
+    - etc. For more information see the *Bitwise logic and shifts operators*
+      sections
       [here](https://en.cppreference.com/w/c/language/operator_arithmetic)
 
 To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
