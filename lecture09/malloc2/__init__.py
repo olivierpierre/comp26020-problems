@@ -32,7 +32,7 @@ def output_correct():
         .stdout("0 1 2 3")\
         .stdout("4 5 6 7")\
         .stdout("8 9 10 11")\
-        .stdout("12 13 14 15")
+        .stdout("12 13 14 15")\
         .exit()
 
     check50.run("./malloc2 5 10")\
