@@ -22,3 +22,5 @@ def function_call(sources_buf):
 @check50.check(compiles)
 def output_correct():
     check50.run("./pointer2 10 20").stdout("10 \+ 20 = 30").exit()
+    check50.run("./pointer2 114324 412443").stdout("114324 \+ 412443 = 526767").exit()
+    check50.run("./pointer2 -46546 6544").stdout("-46546 \+ 6544 = -40002").exit()
