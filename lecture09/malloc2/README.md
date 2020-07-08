@@ -3,7 +3,7 @@
 Write a C program that takes two integer as command line parameter, `x` and
 `y`, and prints on the standard output `y` lines of `x` integers corresponding
 to the first x by y natural integers. The numbers should be stored in a
-2-dimensional array before being printed.
+2-dimensional array allocated with `malloc` before being printed.
 
 ```shell
 # 3 rows, 4 columns
