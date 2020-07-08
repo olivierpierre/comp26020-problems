@@ -15,9 +15,9 @@ def compiles():
 
 @check50.check(exists)
 def validate(sources_buf):
-    if re.search("[a-zA-Z1-9_]+\s*=\s*malloc\(.*sizeof.*\)", sources_buf):
+    if not re.search("[a-zA-Z1-9_]+\s*=\s*malloc\(.*sizeof.*\)", sources_buf):
         raise check50.Failure("Cant find call to malloc or sizeof")
-    if re.search("free\(.*\)", sources_buf):
+    if not re.search("free\(.*\)", sources_buf):
         raise check50.Failure("Cant find call to free")
 
 @check50.check(compiles)
