@@ -20,6 +20,12 @@ def validate(sources_buf):
     if re.search("printf\(.*,\s*.*lm2.*\)", sources_buf):
         raise check50.Failure("Do not use lm2 in printf parameters")
 
+@check50.check(exists)
+def validate2(sources_buf):
+    if not re.search("printf\(.*,\s*lm1\s*.\s*next\s*->\s*next\s*->value\s*\)",
+            sources_buf):
+        raise check50.Failure("Could not find the proper pointer chain walk")
+
 @check50.check(compiles)
 def output_correct():
     check50.run("./pointer4").stdout("third member value is: 3").exit()
