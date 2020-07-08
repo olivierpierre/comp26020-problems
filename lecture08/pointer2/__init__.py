@@ -21,4 +21,4 @@ def function_call(sources_buf):
 
 @check50.check(compiles)
 def output_correct():
-    check50.run("./pointer2 10 20").stdout("10 + 20 = 30").exit()
+    check50.run("./pointer2 10 20").stdout("10 \+ 20 = 30", regexp).exit()
