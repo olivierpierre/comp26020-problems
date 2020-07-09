@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
     }
 
     /* expand the size to 10 int */
-    array = my_realloc(array, 5, 10*sizeof(int));
+    array = my_realloc(array, 5*sizeof(int), 10*sizeof(int));
     if(!array) return -1;
 
     for(int i=5; i<10; i++)
