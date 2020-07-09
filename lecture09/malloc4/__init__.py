@@ -23,19 +23,19 @@ def validate(sources_buf):
 @check50.check(compiles)
 def output_correct():
     check50.run("./malloc4")\
-        .stdout("before realloc, array[0] = 0")\
-        .stdout("before realloc, array[1] = 10")\
-        .stdout("before realloc, array[2] = 20")\
-        .stdout("before realloc, array[3] = 30")\
-        .stdout("before realloc, array[4] = 40")\
-        .stdout("after realloc, array[0] = 0")\
-        .stdout("after realloc, array[1] = 10")\
-        .stdout("after realloc, array[2] = 0")\
-        .stdout("after realloc, array[3] = 0")\
-        .stdout("after realloc, array[4] = 0")\
-        .stdout("after realloc, array[5] = 50")\
-        .stdout("after realloc, array[6] = 60")\
-        .stdout("after realloc, array[7] = 70")\
-        .stdout("after realloc, array[8] = 80")\
-        .stdout("after realloc, array[9] = 90")\
+        .stdout("before realloc, array\[0\] \= 0")\
+        .stdout("before realloc, array\[1\] \= 10")\
+        .stdout("before realloc, array\[2\] \= 20")\
+        .stdout("before realloc, array\[3\] \= 30")\
+        .stdout("before realloc, array\[4\] \= 40")\
+        .stdout("after realloc, array\[0\] \= 0")\
+        .stdout("after realloc, array\[1\] \= 10")\
+        .stdout("after realloc, array\[2\] \= 0")\
+        .stdout("after realloc, array\[3\] \= 0")\
+        .stdout("after realloc, array\[4\] \= 0")\
+        .stdout("after realloc, array\[5\] \= 50")\
+        .stdout("after realloc, array\[6\] \= 60")\
+        .stdout("after realloc, array\[7\] \= 70")\
+        .stdout("after realloc, array\[8\] \= 80")\
+        .stdout("after realloc, array\[9\] \= 90")\
         .exit()
