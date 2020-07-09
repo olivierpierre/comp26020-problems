@@ -31,3 +31,8 @@ def output_correct():
     check50.run("./malloc2 546 874 18 13 87 54 4651 54 877 8 46351 87 654 657 654 546 87 45 67 6 546 85746 984 4 5646 68 47 654 654 6 87674")\
         .stdout("4 6 6 8 13 18 45 47 54 54 67 68 87 87 87 546 546 546 654 654 654 654 657 874 877 984 4651 5646 46351 85746 87674")\
         .exit()
+
+@check50.check(compiles)
+def valgrind_memcheck():
+    check50.c.valgrind("./malloc2").exit()
+
