@@ -39,4 +39,4 @@ def output_correct():
         .stdout("after realloc, array\[8\] \= 80")\
         .stdout("after realloc, array\[9\] \= 90")\
         .exit()
-    check50.c.valgrind("./malloc4")
+    check50.c.valgrind("./malloc4").exit()
