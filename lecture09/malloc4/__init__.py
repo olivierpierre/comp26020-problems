@@ -30,9 +30,9 @@ def output_correct():
         .stdout("before realloc, array\[4\] \= 40")\
         .stdout("after realloc, array\[0\] \= 0")\
         .stdout("after realloc, array\[1\] \= 10")\
-        .stdout("after realloc, array\[2\] \= 0")\
-        .stdout("after realloc, array\[3\] \= 0")\
-        .stdout("after realloc, array\[4\] \= 0")\
+        .stdout("after realloc, array\[2\] \= 20")\
+        .stdout("after realloc, array\[3\] \= 30")\
+        .stdout("after realloc, array\[4\] \= 40")\
         .stdout("after realloc, array\[5\] \= 50")\
         .stdout("after realloc, array\[6\] \= 60")\
         .stdout("after realloc, array\[7\] \= 70")\
