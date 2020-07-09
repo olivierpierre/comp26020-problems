@@ -22,7 +22,7 @@ def validate(sources_buf):
 
 @check50.check(compiles)
 def output_correct():
-    check50.valgrind("./malloc4")\
+    check50.c.valgrind("./malloc4")\
         .stdout("before realloc, array\[0\] \= 0")\
         .stdout("before realloc, array\[1\] \= 10")\
         .stdout("before realloc, array\[2\] \= 20")\
