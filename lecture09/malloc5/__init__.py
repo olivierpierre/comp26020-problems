@@ -13,13 +13,6 @@ def exists():
 def compiles():
     check50.c.compile("malloc5.c", cc="gcc")
 
-@check50.check(exists)
-def validate(sources_buf):
-    if "malloc" not in sources_buf:
-        raise check50.Failure("Cannot find call to malloc")
-    if "free" not in sources_buf:
-        raise check50.Failure("Cannot find a call to free")
-
 @check50.check(compiles)
 def output_correct():
     check50.run("./malloc5")\
