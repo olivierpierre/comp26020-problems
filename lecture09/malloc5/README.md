@@ -8,6 +8,7 @@ Fix the memory leak contained in the following program:
 
 int main(int argc, char **argv) {
     int *a = malloc(10 * sizeof(int));
+    if(!a) return -1;
 
     for(int i=0; i<10; i++)
         a[i] = i*2;
