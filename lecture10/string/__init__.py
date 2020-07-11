@@ -20,6 +20,11 @@ def output_correct():
             .stdin("test")\
             .stdout("you entered: test")\
             .exit()
+    check50.run("./string")\
+            .stdout("input a string:")\
+            .stdin("hello, world!")\
+            .stdout("you entered: hello, world!")\
+            .exit()
 
 @check50.check(compiles)
 def valgrind_memcheck():
