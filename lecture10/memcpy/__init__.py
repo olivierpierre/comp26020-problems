@@ -13,6 +13,11 @@ def exists():
 def compiles():
     check50.c.compile("memcpy.c", cc="gcc")
 
+@check50.check(exists)
+def validate(sources_buf):
+    if "memcpy" not in sources_buf:
+        raise check50.Failure("Cannot find call to memcpy in the code")
+
 @check50.check(compiles)
 def output_correct():
     check50.run("./memcpy 10")\
