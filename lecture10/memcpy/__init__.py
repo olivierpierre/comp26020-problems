@@ -16,18 +16,18 @@ def compiles():
 @check50.check(compiles)
 def output_correct():
     check50.run("./memcpy 10")\
-            .stdout("array1:( [0-9]+){10}", regexp=True)\
-            .stdout("array2:( [0-9]+){10}", regexp=True)\
+            .stdout("array1:( [0-9]+){10}", regex=True)\
+            .stdout("array2:( [0-9]+){10}", regex=True)\
             .exit()
     check50.run("./memcpy 20")\
-            .stdout("array1:( [0-9]+){20}", regexp=True)\
-            .stdout("array2:( [0-9]+){20}", regexp=True)\
+            .stdout("array1:( [0-9]+){20}", regex=True)\
+            .stdout("array2:( [0-9]+){20}", regex=True)\
             .exit()
 
 @check50.check(compiles)
 def valgrind_memcheck():
     check50.c.valgrind("./memcpy 20")\
-            .stdout("array1:( [0-9]+){20}", regexp=True)\
-            .stdout("array2:( [0-9]+){20}", regexp=True)\
+            .stdout("array1:( [0-9]+){20}", regex=True)\
+            .stdout("array2:( [0-9]+){20}", regex=True)\
             .exit()
 
