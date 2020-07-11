@@ -16,9 +16,9 @@ def compiles():
 @check50.check(compiles)
 def output_correct():
     check50.run("./time 3")\
-            .stdout("sleep duration: 3.[0-9]+")\
+            .stdout("sleep duration: 3.[0-9]+", timeout=5)\
             .exit()
     check50.run("./time 5")\
-            .stdout("sleep duration: 5.[0-9]+")\
+            .stdout("sleep duration: 5.[0-9]+", timeout=7)\
             .exit()
 
