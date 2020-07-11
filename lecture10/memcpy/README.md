@@ -23,8 +23,8 @@ array2: 32 32 54 12 52 56 8 30 44 94 44 39 65 19 51
     `int random_int = rand()%10`.
 
 To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
-or [IDE](ide.cs50.io) and write it in a file named `string3.c`. In a terminal,
+or [IDE](ide.cs50.io) and write it in a file named `memcpy.c`. In a terminal,
 with that file in the local directory, check with this command:
 ```shell
-check50 -l --log olivierpierre/comp26020-problems/master/lecture10/string3
+check50 -l --log olivierpierre/comp26020-problems/master/lecture10/memcpy
 ```
