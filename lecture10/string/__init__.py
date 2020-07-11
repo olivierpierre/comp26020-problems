@@ -23,5 +23,9 @@ def output_correct():
 
 @check50.check(compiles)
 def valgrind_memcheck():
-    check50.c.valgrind("./string").exit()
+    check50.c.valgrind("./string")\
+            .stdout("input a string:")\
+            .stdin("hello")\
+            .stdout("you entered: hello")\
+            .exit()
 
