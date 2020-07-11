@@ -11,7 +11,7 @@ def exists():
 
 @check50.check(exists)
 def compiles():
-    check50.c.compile("time.c", cc="gcc", std="=gnu99")
+    check50.c.compile("time.c", cc="gcc", std="gnu99")
 
 @check50.check(compiles)
 def output_correct():
