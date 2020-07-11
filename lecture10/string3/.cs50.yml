@@ -1,4 +1,4 @@
 check50:
   files: &check50_files
     - !exclude "*"
-    - !require string.c
+    - !require string3.c
