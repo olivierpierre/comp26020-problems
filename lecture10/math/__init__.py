@@ -20,7 +20,7 @@ def output_correct():
             .stdin("12.4")\
             .stdout("Input 0 for ceil, 1 for floor")\
             .stdin("0")\
-            .stdout("12.000000")\
+            .stdout("13.000000")\
             .exit()
     check50.run("./math")\
             .stdout("Input a number:")\
