@@ -27,6 +27,6 @@ def output_correct():
             .stdin("442.8")\
             .stdout("Input 0 for ceil, 1 for floor")\
             .stdin("1")\
-            .stdout("422.000000")\
+            .stdout("442.000000")\
             .exit()
 
