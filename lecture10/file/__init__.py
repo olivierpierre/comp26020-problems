@@ -23,7 +23,7 @@ def output_correct():
             .exit()
     with open("sample-file-1-processed") as f:
         buf = f.read()
-        if buf == expected_file:
+        if not (buf == expected_file):
             print("------ got: --------")
             print(buf)
             print("---- expected: -----")
