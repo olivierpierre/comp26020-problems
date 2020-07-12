@@ -2,6 +2,9 @@ import check50
 import check50.c
 import re
 
+expected_file = " world\nthis is a test file containing the word  several "
+    "times\nsome lines do not contain that word\nwhile others do: \n"
+
 @check50.check()
 def exists():
     check50.exists("file.c")
@@ -20,6 +23,10 @@ def output_correct():
             .exit()
     with open("sample-file-1-processed") as f:
         buf = f.read()
-        if buf is not " world\nthis is a test file containing the word  several times\nsome lines do not contain that word\nwhile others do: \n":
+        if buf is not expected_file:
+            print("------ got: --------")
+            print(buf)
+            print("---- expected: -----")
+            print(expected_file)
             raise check50.Failure("Bad output file")
 
