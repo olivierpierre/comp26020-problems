@@ -2,7 +2,7 @@ import check50
 import check50.c
 import re
 
-expected_file = " world\nthis is a test file containing the word  several "
+expected_file = " world\nthis is a test file containing the word  several " \
     "times\nsome lines do not contain that word\nwhile others do: \n"
 
 @check50.check()
