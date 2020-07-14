@@ -16,7 +16,7 @@ def compiles():
 
 @check50.check(exists)
 def validate(sources_buf):
-    if "#include\s+\"preprocessor\.h\"" not in sources_buf:
+    if not re.search("#include\s+\"preprocessor\.h\"", sources_buf):
         raise check50.Failure("preprocessor.h not included in preprocessor.c")
 
 @check50.check(compiles)
