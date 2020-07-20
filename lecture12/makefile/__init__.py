@@ -24,7 +24,13 @@ def output_correct():
     check50.exists("main.o")
     check50.exists("module1.o")
     check50.exists("module2.o")
+    check50.exists("prog")
 
     check50.run("make")\
             .stdout("make: Nothing to be done for .*")\
+            .exit()
+
+    check50.run("touch module1.c && make")\
+            .stdout("*module1*")\
+            .stdout("*module1*")\
             .exit()
