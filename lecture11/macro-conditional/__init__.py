@@ -12,7 +12,7 @@ def exists():
 @check50.check(exists)
 def compiles():
     check50.c.compile("macro-conditional.c", exe_name="debug", cc="gcc",
-            -DDEBUG_MODE)
+            cflags=-DDEBUG_MODE)
     check50.c.compile("macro-conditional.c", exe_name = "release", cc="gcc")
 
 @check50.check(compiles)
