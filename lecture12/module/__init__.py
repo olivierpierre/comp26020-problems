@@ -30,9 +30,9 @@ def has_header(header, source_buffer):
 @check50.check(exists)
 def validate(sources):
     # Check main
-    if !has_header("module1.h", sources["main.c"]) or \
-            !has_header("module2.h", sources["main.c"]) or \
-            !has_header("module3.h", sources["main.c"]):
+    if not has_header("module1.h", sources["main.c"]) or \
+            not has_header("module2.h", sources["main.c"]) or \
+            not has_header("module3.h", sources["main.c"]):
                 raise check50.Failure("Header(s) missing in main.c")
 
 @check50.check(compiles)
