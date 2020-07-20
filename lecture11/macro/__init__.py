@@ -4,29 +4,29 @@ import re
 
 @check50.check()
 def exists():
-    check50.exists("math.c")
-    with open("math.c") as f:
+    check50.exists("macro.c")
+    with open("macro.c") as f:
         sources_buf = f.read()
     return sources_buf
 
 @check50.check(exists)
 def compiles():
-    check50.c.compile("math.c", cc="gcc")
+    check50.c.compile("macro.c", cc="gcc")
+
+@check50.check(exists)
+def validate(sources_buf):
+    if not re.search("\#define\sSAMPLE_SIZE\s10", sources_buf):
+        raise check50.Failure("Can't find a correct definition of SAMPLE_SIZE")
+    if not re.search("\#define\sMAX_VAL\s50", sources_buf):
+        raise check50.Failure("Can't find a correct definition of MAX_VAL")
 
 @check50.check(compiles)
 def output_correct():
-    check50.run("./math")\
-            .stdout("Input a number:")\
-            .stdin("12.4")\
-            .stdout("Input 0 for ceil, 1 for floor")\
-            .stdin("0")\
-            .stdout("13.000000")\
-            .exit()
-    check50.run("./math")\
-            .stdout("Input a number:")\
-            .stdin("442.8")\
-            .stdout("Input 0 for ceil, 1 for floor")\
-            .stdin("1")\
-            .stdout("442.000000")\
+    check50.run("./macro")\
+            .stdout("bin 0: \[000 - 010\[ \**")\
+            .stdout("bin 1: \[010 - 020\[ \**")\
+            .stdout("bin 2: \[020 - 030\[ \**")\
+            .stdout("bin 3: \[030 - 040\[ \**")\
+            .stdout("bin 4: \[040 - 050\[ \**")\
             .exit()
 
