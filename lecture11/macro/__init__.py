@@ -15,9 +15,9 @@ def compiles():
 
 @check50.check(exists)
 def validate(sources_buf):
-    if not re.search("\#define\sSAMPLE_SIZE\s10", sources_buf):
+    if not re.search("\#define\s+SAMPLE_SIZE\s+10", sources_buf):
         raise check50.Failure("Can't find a correct definition of SAMPLE_SIZE")
-    if not re.search("\#define\sMAX\_VAL\s50", sources_buf):
+    if not re.search("\#define\s+MAX_VAL\s+50", sources_buf):
         raise check50.Failure("Can't find a correct definition of MAX_VAL")
 
 @check50.check(compiles)
