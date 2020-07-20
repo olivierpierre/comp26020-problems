@@ -1,0 +1,9 @@
+check50:
+  files: &check50_files
+    - !exclude "*"
+    - !require main.c
+    - !require module1.c
+    - !require module2.c
+    - !require module1.h
+    - !require module2.h
+    - !require Makefile
