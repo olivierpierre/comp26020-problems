@@ -43,9 +43,9 @@ def validate(sources):
             not has_header("math.h", sources["module1.c"]):
             raise check50.Failure("Header(s) missing in module2.c")
     if has_header("stdio.h", sources["module1.c"]) or \
-    if has_header("sys/time.h", sources["module1.c"]) or \
-    if has_header("module2.h", sources["module1.c"]) or \
-    if has_header("module3.h", sources["module1.c"]):
+            has_header("sys/time.h", sources["module1.c"]) or \
+            has_header("module2.h", sources["module1.c"]) or \
+            has_header("module3.h", sources["module1.c"]):
         raise check50.Failure("Unneeded header(s) in module1.c")
 
     # Check module2
@@ -53,8 +53,8 @@ def validate(sources):
             not has_header("sys/time.h", sources["module2.c"]):
             raise check50.Failure("Header(s) missing in module2.c")
     if has_header("stdio.h", sources["module2.c"]) or \
-    if has_header("module1.h", sources["module2.c"]) or \
-    if has_header("module3.h", sources["module2.c"]):
+            has_header("module1.h", sources["module2.c"]) or \
+            has_header("module3.h", sources["module2.c"]):
         raise check50.Failure("Unneeded header(s) in module2.c")
 
     # Check module3
@@ -62,9 +62,9 @@ def validate(sources):
             not has_header("stdio.h", sources["module3.c"]):
             raise check50.Failure("Header(s) missing in module3.c")
     if has_header("sys/time.h", sources["module3.c"]) or \
-    if has_header("math.h", sources["module3.c"]) or \
-    if has_header("module1.h", sources["module3.c"]) or \
-    if has_header("module2.h", sources["module3.c"]):
+            has_header("math.h", sources["module3.c"]) or \
+            has_header("module1.h", sources["module3.c"]) or \
+            has_header("module2.h", sources["module3.c"]):
         raise check50.Failure("Unneeded header(s) in module2.c")
 
 @check50.check(compiles)
