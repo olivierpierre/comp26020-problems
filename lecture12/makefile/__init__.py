@@ -31,6 +31,6 @@ def output_correct():
             .exit()
 
     check50.run("touch module1.c && make")\
-            .stdout("*module1*")\
-            .stdout("*module1*")\
+            .stdout(".*module1.*")\
+            .stdout(".*module1.*")\
             .exit()
