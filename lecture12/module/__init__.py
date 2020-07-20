@@ -22,8 +22,8 @@ def compiles():
             exe_name="module", cc="gcc")
 
 def has_header(header, source_buffer):
-    re = "#include\s+[<\"]+\s*" + re.escape(header) + "\s*[>\"]+"
-    if re.search(re, source_buffer):
+    rex = "#include\s+[<\"]+\s*" + re.escape(header) + "\s*[>\"]+"
+    if re.search(rex, source_buffer):
         return True
     return False
 
