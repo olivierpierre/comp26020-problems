@@ -26,5 +26,5 @@ def output_correct():
     check50.exists("module2.o")
 
     check50.run("make")\
-            .stdout("make: Nothing to be done for .*")
+            .stdout("make: Nothing to be done for .*")\
             .exit()
