@@ -21,9 +21,19 @@ def compiles():
     check50.c.compile("main.c", "module1.c", "module2.c", "module3.c",
             exe_name="module", cc="gcc")
 
+def has_header(header, source_buffer):
+    re = "#include\s+[<\"]+\s*" + re.escape(header) + "\s*[>\"]+"
+    if re.search(re, source_buffer):
+        return True
+    return False
+
 @check50.check(exists)
 def validate(sources):
-    pass
+    # Check main
+    if !has_header("module1.h", sources["main.c"]) or \
+            !has_header("module2.h", sources["main.c"]) or \
+            !has_header("module3.h", sources["main.c"]):
+                raise check50.Failure("Header(s) missing in main.c")
 
 @check50.check(compiles)
 def output_correct():
