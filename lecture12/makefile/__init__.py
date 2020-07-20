@@ -16,6 +16,7 @@ def exists():
 
 @check50.check(exists)
 def validate(sources_buf):
+    pass
 
 @check50.check(exists)
 def output_correct():
