@@ -19,7 +19,7 @@ def exists():
 @check50.check(exists)
 def compiles():
     check50.c.compile("main.c", "module1.c", "module2.c", "module3.c",
-            cc="gcc")
+            exe_name="module", cc="gcc")
 
 @check50.check(exists)
 def validate(sources):
