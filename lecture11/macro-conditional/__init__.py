@@ -11,9 +11,9 @@ def exists():
 
 @check50.check(exists)
 def compiles():
-    check50.c.compile("macro-conditional.c", cc="gcc",
-            cflags="-DDEBUG_MODE -o debug")
-    check50.c.compile("macro-conditional.c", cc="gcc", cflags="-o release")
+    check50.c.compile("macro-conditional.c", exe_name="debug". cc="gcc",
+            cflags="-DDEBUG_MODE")
+    check50.c.compile("macro-conditional.c", exe_name = "release", cc="gcc")
 
 @check50.check(compiles)
 def output_correct():
