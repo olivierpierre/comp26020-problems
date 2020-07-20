@@ -23,13 +23,13 @@ bin 4: [080 - 100[ *******************
 ```
 
 Update the program so that the display of the debug output happens only when
-the macro `DEBUG_MODE` is defined. Do not define the macro itself in the code,
+the macro `DEBUGMODE` is defined. Do not define the macro itself in the code,
 we will rather use the
 [-D](https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html) gcc
 parameter to do so at compile time:
 
 ```
-gcc -DDEBUG_MODE macro-conditional.c -o macro-conditional
+gcc -DDEBUGMODE macro-conditional.c -o macro-conditional
 ./macro-conditional
 # Debug output displayed
 
