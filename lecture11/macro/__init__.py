@@ -23,7 +23,7 @@ def validate(sources_buf):
     if sources_buf.count("SAMPLE_SIZE") != 5:
         raise check50.Failure("There should be 5 occurences of SAMPLE_SIZE in"
                 " the sources")
-    if sources_buf.count("SAMPLE_SIZE") != 11:
+    if sources_buf.count("MAX_VAL") != 11:
         raise check50.Failure("There should be 11 occurences of MAX_VAL in"
                 " the sources")
 
