@@ -38,5 +38,5 @@ def output_correct():
 
     check50.run("make clean")\
             .exit()
-    if os.path.exist("prog"):
+    if os.path.exists("prog"):
         raise check50.Failure("Bad make clean rule")
