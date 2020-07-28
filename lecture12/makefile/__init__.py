@@ -38,5 +38,6 @@ def output_correct():
 
     check50.run("make clean")\
             .exit()
-    if os.path.exists("prog"):
+    if os.path.exists("prog") or os.path.exists("module1.o") or \
+            os.path.exists("module2.o") or os.path.exists("main.o"):
         raise check50.Failure("Bad make clean rule")
