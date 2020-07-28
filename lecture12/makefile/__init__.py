@@ -1,6 +1,7 @@
 import check50
 import check50.c
 import re
+import os.path
 
 @check50.check()
 def exists():
@@ -34,3 +35,8 @@ def output_correct():
             .stdout(".*module1.*")\
             .stdout(".*module1.*")\
             .exit()
+
+    check50.run("make clean")\
+            .exit()
+    if path.exist("prog"):
+        raise check50.Failure("Bad make clean rule")
