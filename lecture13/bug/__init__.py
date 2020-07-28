@@ -18,6 +18,6 @@ def output_correct():
     check50.run("./bug")\
             .stdout("Please enter an integer between 0 and 9999:")\
             .stdin("12")\
-            .stdout("array[12] = [0-9]+")\
+            .stdout("array\[12\] = [0-9]+")\
             .exit()
 
