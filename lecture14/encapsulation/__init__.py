@@ -15,7 +15,11 @@ def compiles():
 
 @check50.check(exists)
 def validate(sources_buf):
-    pass
+    if not re.search("\s*private:", sources_buf):
+        raise check50.Failure("Could not find private visibility keyword")
+    if not re.search("Rectangle r(10, 20)", sources_buf) or \
+            not re.search("r\s*=\s*new\s+Rectangle(10, 20)", sources_buf):
+                raise check50.Failure("Could not find call to Rectangle constructor")
 
 @check50.check(compiles)
 def output_correct():
