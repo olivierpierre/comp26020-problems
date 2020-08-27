@@ -1,4 +1,4 @@
-# Lecture 14 Problem 1
+# Lecture 14 Problem 2
 
 Consider the program [encapsulation.cpp](encapsulation.cpp):
 
