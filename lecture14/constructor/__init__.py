@@ -4,8 +4,8 @@ import re
 
 @check50.check()
 def exists():
-    check50.exists("constructor.c")
-    with open("constructor.c") as f:
+    check50.exists("constructor.cpp")
+    with open("constructor.cpp") as f:
         sources_buf = f.read()
     return sources_buf
 
