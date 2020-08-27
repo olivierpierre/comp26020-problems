@@ -11,7 +11,7 @@ def exists():
 
 @check50.check(exists)
 def compiles():
-    check50.c.compile("constructor.cpp", cc="g++")
+    check50.c.compile("constructor.cpp", exe_name="constructor", cc="g++")
 
 @check50.check(exists)
 def validate(sources_buf):
