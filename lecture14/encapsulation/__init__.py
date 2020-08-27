@@ -26,6 +26,15 @@ def validate(sources_buf):
     if not re.search("r\.get_length\(\)", sources_buf) and \
             not re.search("r->get_length\(\)", sources_buf):
                 raise check50.Failure("Could not find call to Rectangle getter")
+    if not re.search("c\.get_radius\(\)", sources_buf) and \
+            not re.search("c->get_radius\(\)", sources_buf):
+                raise check50.Failure("Could not find call to Circle getter")
+    if not re.search("r\.perimeter\(\)", sources_buf) and \
+            not re.search("r->perimeter\(\)", sources_buf):
+                raise check50.Failure("Could not find call to perimeter method")
+    if not re.search("c\.circumference\(\)", sources_buf) and \
+            not re.search("c->circumference\(\)", sources_buf):
+                raise check50.Failure("Could not find call to circumference method")
 
 @check50.check(compiles)
 def output_correct():
