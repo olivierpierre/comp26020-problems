@@ -1,4 +1,4 @@
-# Lecture 14 Problem 4
+# Lecture 15 Problem 4
 
 The program [vector.cpp](vector.cpp) initialize two arrays `array1` and
 `array2` of variable sizes s1 and s2, and a third array with a size equal to
@@ -26,5 +26,5 @@ To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write it in a file named `vector.cpp`. In a
 terminal, with that file in the local directory, check with this command:
 ```shell
-check50 -l --log olivierpierre/comp26020-problems/master/lecture14/vector
+check50 -l --log olivierpierre/comp26020-problems/master/lecture15/vector
 ```

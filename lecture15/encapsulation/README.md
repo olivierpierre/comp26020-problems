@@ -1,4 +1,4 @@
-# Lecture 14 Problem 2
+# Lecture 15 Problem 2
 
 Consider the program [encapsulation.cpp](encapsulation.cpp):
 
@@ -65,5 +65,5 @@ To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write it in a file named `encapsulation.cpp`. In a
 terminal, with that file in the local directory, check with this command:
 ```shell
-check50 -l --log olivierpierre/comp26020-problems/master/lecture14/encapsulation
+check50 -l --log olivierpierre/comp26020-problems/master/lecture15/encapsulation
 ```

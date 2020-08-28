@@ -1,4 +1,4 @@
-# Lecture 14 Problem 5
+# Lecture 15 Problem 5
 
 The program [module.cpp](module.cpp) contains two classes managing pairs and
 trios of integers and the multiply/addition operations that can be performed
@@ -22,5 +22,5 @@ To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io). In a terminal, with all the mentioned source files in
 the local directory, check with this command:
 ```shell
-check50 -l --log olivierpierre/comp26020-problems/master/lecture14/module
+check50 -l --log olivierpierre/comp26020-problems/master/lecture15/module
 ```

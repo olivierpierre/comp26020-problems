@@ -1,4 +1,4 @@
-# Lecture 14 Problem 3
+# Lecture 15 Problem 3
 
 The program [destructor.cpp](destructor.cpp) contains a memory leak:
 
@@ -72,5 +72,5 @@ To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write it in a file named `destructor.cpp`. In a
 terminal, with that file in the local directory, check with this command:
 ```shell
-check50 -l --log olivierpierre/comp26020-problems/master/lecture14/destructor
+check50 -l --log olivierpierre/comp26020-problems/master/lecture15/destructor
 ```
