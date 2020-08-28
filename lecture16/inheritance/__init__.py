@@ -15,7 +15,14 @@ def compiles():
 
 @check50.check(exists)
 def validate(sources_buf):
-    pass
+    if not re.search("class\s+Vehicle" in sources_buf):
+        raise check50.Failure("Could not find class Vehicle")
+    if not re.search("class\s+Car\s+:\s+public\s+Vehicle" in sources_buf):
+        raise check50.Failure("Could not find class Car or class Car does not "\
+                "inheritates from a parent")
+    if not re.search("class\s+Motorbike\s+:\s+public\s+Vehicle" in sources_buf):
+        raise check50.Failure("Could not find class Motorbike or class "\
+                "Motorbike does not inheritates from a parent")
 
 @check50.check(compiles)
 def output_correct():
