@@ -41,7 +41,7 @@ def validate(sources):
     # Check module1
     if not has_header("module1.h", sources["module1.c"]) or \
             not has_header("math.h", sources["module1.c"]):
-            raise check50.Failure("Header(s) missing in module2.c")
+            raise check50.Failure("Header(s) missing in module1.c")
     if has_header("stdio.h", sources["module1.c"]) or \
             has_header("sys/time.h", sources["module1.c"]) or \
             has_header("module2.h", sources["module1.c"]) or \
