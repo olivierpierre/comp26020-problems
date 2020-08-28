@@ -33,14 +33,15 @@ def validate(sources):
             not has_header("Trio.h", sources["main.cpp"]):
                 raise check50.Failure("Header(s) missing in main.cpp")
 
-    # Check module1
+    # Check Pair
     if not has_header("Pair.h", sources["Pair.cpp"]):
             raise check50.Failure("Header(s) missing in Pair.cpp")
 
-    # Check module2
-    if not has_header("Pair.h", sources["Trio.cpp"]) or \
-            not has_header("Trio.h", sources["Trio.cpp"]):
+    # Check Trio
+    if not has_header("Trio.h", sources["Trio.cpp"]):
             raise check50.Failure("Header(s) missing in Trio.cpp")
+    if not has_header("Pair.h", sources["Trio.h"]):
+            raise check50.Failure("Header(s) missing in Trio.h")
 
 @check50.check(compiles)
 def output_correct():
