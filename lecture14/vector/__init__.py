@@ -15,7 +15,10 @@ def compiles():
 
 @check50.check(exists)
 def validate(sources_buf):
-    pass
+    if "malloc(" in sources_buf or "free(" in sources_buf:
+        raise check50.Failure("There should be no calls to malloc/free")
+    if re.search("multiply_arrays.*[\n]{0,1}.*size[1|2].*\)", sources_buf):
+        raise check50.Failure("multiply_array should not take size1 or size2 as parameters")
 
 @check50.check(compiles)
 def output_correct():
