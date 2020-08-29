@@ -55,7 +55,7 @@ encapsulation and rewrite this program to implement:
   `get_radius`, etc.
 
 The expected output is:
-```sh
+```shell
 ./encapsulation
 Rectangle l: 10.000000, w: 20.000000, perimeter: 60.000000
 Circle r: 1.000000, circumference: 6.280000

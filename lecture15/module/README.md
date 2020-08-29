@@ -10,7 +10,7 @@ files:
 - `main.cpp` containing the rest of the program
 
 The expected output is:
-```sh
+```shell
 ./module
 multiply 42 and 100: 4200
 add 42 and 100: 142

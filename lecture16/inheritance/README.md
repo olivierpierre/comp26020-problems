@@ -33,7 +33,7 @@ implementation of constructors and relevant member functions knowing that:
 - `Motorbike` inheritates from `Vehicle` and has a member variable `_cc_class`
 
 Expected output:
-```sh
+```shell
 ./inheritance
 v's mileage is: 20000
 c1's mileage is: 10000, steering wheels: 2

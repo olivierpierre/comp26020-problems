@@ -28,7 +28,7 @@ Rewrite the class Pair definition to use a constructor rather than the manual
 and per-member initialization done in the main function. The expected output
 should be:
 
-```sh
+```shell
 ./constructor
 p.x is 10, p.y is 20
 ```

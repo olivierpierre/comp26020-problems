@@ -35,7 +35,7 @@ Write the files `Employee.h` and `Employee.cpp` containing the classes
 definitions and implementations. Compiled with the program presented above,
 it should produce the following output:
 
-```sh
+```shell
 ./inheritance2
 [1234 - James] I'm consulting on Aerodynamics until 15/01/2022
 [1212 - Stella] I'm taking an important decision in office 10

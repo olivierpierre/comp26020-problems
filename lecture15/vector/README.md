@@ -17,7 +17,7 @@ Rewrite this program to use `vector`s rather than C-style arrays for `array1`,
 
 
 An example of expected output is:
-```sh
+```shell
 ./vector 5 10     
 0 2 4 6 8 5 6 7 8 9
 ```

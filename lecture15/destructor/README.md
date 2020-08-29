@@ -62,7 +62,7 @@ int main(int argc, char **argv) {
 Rewrite the program to fix the leak by implementing a destructor for the
 relevant class. The expected output is:
 
-```sh
+```shell
 ./destructor
 Toplevel val: 30, with pair:
 Pair x: 10, y: 20
