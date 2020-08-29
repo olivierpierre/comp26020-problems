@@ -43,8 +43,8 @@ def validate(sources):
 @check50.check(compiles)
 def output_correct():
     check50.run("./inheritance2")\
-            .stdout("[1234 - James] I'm consulting on Aerodynamics until 15/01/2022")\
-            .stdout("[1212 - Stella] I'm taking an important decision in office 10")\
-            .stdout("[1678 - Elon] I'm taking an very important decision in office 42")\
+            .stdout("\[1234 - James\] I'm consulting on Aerodynamics until 15/01/2022")\
+            .stdout("\[1212 - Stella\] I'm taking an important decision in office 10")\
+            .stdout("\[1678 - Elon\] I'm taking an very important decision in office 42")\
             .exit()
 
