@@ -20,7 +20,7 @@ def validate(sources_buf):
 @check50.check(compiles)
 def output_correct():
     check50.run("./overloading")\
-        .stdout("(4+5i) + (9+11i) = (13+16i)")\
+        .stdout("\(4+5i\) + \(9+11i\) = \(13+16i\)")\
         .stdout("4 + 9 = 13")\
         .stdout("5.800000 + 11.200000 = 17.000000")\
         .exit()
