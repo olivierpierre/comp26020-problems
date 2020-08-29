@@ -20,6 +20,7 @@ def validate(sources_buf):
 @check50.check(compiles)
 def output_correct():
     check50.run("./inheritance3")\
-            .stdout("m's mileage is:  50000, cc class: 500")\
+            .stdout("derived method called, z: 5. Now calling base_method")\
+            .stdout("base_method called, x: 3, y: 4")\
             .exit()
 
