@@ -15,7 +15,7 @@ def compiles():
 
 @check50.check(compiles)
 def output_correct():
-    check50.run("./ascii 5")\
+    check50.run("./ascii")\
             .stdout("capital a: A")\
             .stdout("capital b: B")\
             .stdout("capital c: C")\

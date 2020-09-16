@@ -16,7 +16,8 @@ char capitalize(char c) {
 
 int main(int argc, char **argv) {
     for(int i=0; i<26; i++)
-        printf("capital %c: %c\n", alphabet[i], capitalize(alphabet[i]));
+        printf("capital %c: %c\n",
+            alphabet[i], capitalize(alphabet[i]));
 
     return 0;
 }
@@ -42,7 +43,7 @@ capital z: Z
 ```
 
 To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
-or [IDE](ide.cs50.io) and write it in a file named `pointer.c`. In a terminal,
+or [IDE](ide.cs50.io) and write it in a file named `ascii.c`. In a terminal,
 with that file in the local directory, check with this command:
 ```shell
 check50 -l --log olivierpierre/comp26020-problems/master/video13/ascii
