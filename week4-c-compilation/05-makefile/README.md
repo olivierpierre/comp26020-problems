@@ -13,12 +13,12 @@ contain intermediate rules compiling 1) C source files into object file and
 object files.
 
 You can download all the aforementioned source filed in a compressed archive
-[here](video12p2.zip).
+[here](src.zip).
 
 To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io). In a terminal,
 with all source files as well as the Makefile in the local directory, check
 with this command:
 ```shell
-check50 -l --log olivierpierre/comp26020-problems/master/video12/makefile
+check50 -l --log olivierpierre/comp26020-problems/master/week4-c-compilation/05-makefile
 ```

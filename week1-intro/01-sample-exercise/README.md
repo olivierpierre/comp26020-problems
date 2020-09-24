@@ -14,5 +14,5 @@ or [IDE](ide.cs50.io) and write it in a file named `sample-exercise.c`. In a ter
 with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --log olivierpierre/comp26020-problems/master/lecture00/sample-exercise
+check50 -l --log olivierpierre/comp26020-problems/master/week1-intro/01-sample-exercise
 ```

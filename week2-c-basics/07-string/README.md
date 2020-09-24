@@ -45,5 +45,5 @@ or [IDE](ide.cs50.io) and write it in a file named `string.c`. In a terminal,
 with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --log olivierpierre/comp26020-problems/master/video05/string
+check50 -l --log olivierpierre/comp26020-problems/master/week2-c-basics/07-string
 ```

@@ -18,5 +18,5 @@ To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io). In a terminal,
 with that file in the local directory, check with this command:
 ```shell
-check50 -l --log olivierpierre/comp26020-problems/master/video11/preprocessor
+check50 -l --log olivierpierre/comp26020-problems/master/week4-c-compilation/01-preprocessor
 ```

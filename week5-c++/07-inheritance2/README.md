@@ -46,5 +46,5 @@ To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write `Employee.cpp` and `Employee.h`. Along with
 `inheritance2.cpp` in the local folder, use this command:
 ```shell
-check50 -l --log olivierpierre/comp26020-problems/master/video16/inheritance2
+check50 -l --log olivierpierre/comp26020-problems/master/week5-c++/07-inheritance2
 ```
