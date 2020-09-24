@@ -1,5 +1,3 @@
-# Video 3 Problem 2
-
 The following program is supposed to print a line on the standard output but
 compilation fails due to several errors:
 

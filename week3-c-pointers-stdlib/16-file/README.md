@@ -1,5 +1,3 @@
-# Video 10 Problem 7
-
 Write a C program taking as command line parameter A) a file name `f` and B) a
 word `w`. The program then creates the file `f-processed` which is a copy of
 `f` where all occurences of the word `w` have been deleted. Here is an example

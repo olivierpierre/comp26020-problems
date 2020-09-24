@@ -1,5 +1,3 @@
-# Video 3 Problem 3
-
 Write a C program displaying a large 11x9 characters 'C' using dashes.
 The expected output is:
 

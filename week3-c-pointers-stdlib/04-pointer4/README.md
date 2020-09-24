@@ -1,5 +1,3 @@
-# Video 8 Problem 4
-
 With a [linked list](https://en.wikipedia.org/wiki/Linked_list), the
 programmer uses pointer chains to link together data structures. In the example
 program below, a simple linked list with 3 elements is constructed then the

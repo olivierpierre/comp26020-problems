@@ -1,5 +1,3 @@
-# Video 10 Problem 2
-
 Write a C program reading two strings from the standard input using `fgets`,
 and indicating if the strings are similar or not. Output examples:
 

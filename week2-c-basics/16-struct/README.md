@@ -1,5 +1,3 @@
-# Video 7 Problem 2
-
 Consider the following structure:
 
 ```c

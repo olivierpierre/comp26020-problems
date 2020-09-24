@@ -1,5 +1,3 @@
-# Video 10 Problem 4
-
 Write a C program taking an integer `n` as command line parameter, allocating
 an array of integer of size `n`, and filling that array with random integers --
 each between 0 and 100. Next, a second array of size `n` is created and the

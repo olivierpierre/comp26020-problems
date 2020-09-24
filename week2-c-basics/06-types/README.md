@@ -1,5 +1,3 @@
-# Video 4 Problem 3
-
 The following code fails to compile due to a missing variable declaration:
 
 ```c

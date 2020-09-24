@@ -1,5 +1,3 @@
-# Video 6 Problem 4
-
 Write a C program taking an integer as command line parameter and displaying
 the factorial of that integer on the standard output as follows:
 ```

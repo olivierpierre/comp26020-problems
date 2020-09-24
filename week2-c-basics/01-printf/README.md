@@ -1,5 +1,3 @@
-# Video 3 Problem 1
-
 This is a variation of the "hello world" example program presented in the
 lecture. Write a C program displaying "Goodbye, world!". The expected output
 is:

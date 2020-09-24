@@ -1,5 +1,3 @@
-# Video 4 Problem 1
-
 Write a simple program declaring two variables: `int_var` with type `int` and
 `double_var` with type `double`. Assign a value to each of them and print their
 values. The expected output is as follows:

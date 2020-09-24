@@ -1,5 +1,3 @@
-# Video 4 Problem 2
-
 Write a simple program printing the size of `int` variables, followed on the
 next line by the size of `double` variables, followed on a third line by the
 size of `unsigned long long int` variables. On a last line, print the value of

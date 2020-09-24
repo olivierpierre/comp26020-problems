@@ -1,5 +1,3 @@
-# Video 8 Problem 1
-
 Write a program that takes an integer as parameter and places it in a variable
 of type `int`. The program then proceeds to print the value as well as the
 address of the variable as follows:

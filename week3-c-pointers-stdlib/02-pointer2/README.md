@@ -1,5 +1,3 @@
-# Video 8 Problem 2
-
 Consider the following program:
 
 ```c

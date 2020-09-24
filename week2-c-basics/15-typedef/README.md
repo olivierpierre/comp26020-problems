@@ -1,5 +1,3 @@
-# Video 7 Problem 1
-
 The program below prints the dimensions of a rectangle passed from the command
 line arguments:
 

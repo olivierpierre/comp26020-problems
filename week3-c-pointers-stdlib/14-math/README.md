@@ -1,5 +1,3 @@
-# Video 10 Problem 5
-
 Write a C program reading a `double` with `scanf` and asking the user if he
 wants this number to be floored or ceiled. Next, the program performs the 
 requested operation and displays the result. Output examples:

@@ -1,5 +1,3 @@
-# Video 9 Problem 2
-
 Write a program taking a list of integers as command line parameters, storing
 them in an array allocated with `malloc`, and sorting that array in increasing
 order.

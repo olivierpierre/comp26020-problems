@@ -1,5 +1,3 @@
-# Video 9 Problem 4
-
 Consider the following program:
 ```c
 #include <stdio.h>

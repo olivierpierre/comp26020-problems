@@ -1,5 +1,3 @@
-# Video 5 Problem 2
-
 Write a C program that takes 3 floating point numbers as command line
 parameters and displays on the standard boutput the value of the multiplication
 of these 3 numbers. Examples of execution:

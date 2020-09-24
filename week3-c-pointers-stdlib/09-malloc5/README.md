@@ -1,5 +1,3 @@
-# Video 9 Problem 5
-
 Fix the memory leak contained in the following program:
 
 ```c

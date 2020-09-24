@@ -1,5 +1,3 @@
-# Video 5 Problem 1
-
 The following program is supposed to print `hi there` on the standard output
 and exit:
 ```c

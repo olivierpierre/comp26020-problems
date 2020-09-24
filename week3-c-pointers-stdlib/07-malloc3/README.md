@@ -1,5 +1,3 @@
-# Video 9 Problem 3
-
 Write a C program that takes two integer as command line parameter, `x` and
 `y`, and prints on the standard output `y` lines of `x` integers corresponding
 to the first (`x * y`) natural integers. The numbers should be stored in a

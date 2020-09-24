@@ -1,5 +1,3 @@
-# Video 10 Problem 6
-
 Write a C program taking an integer `n` as command line parameter and sleeping
 for `n` seconds. The execution time of the `sleep` function is measured and
 displayed. Examples output:

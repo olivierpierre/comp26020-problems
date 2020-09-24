@@ -1,5 +1,3 @@
-# Video 8 Problem 3
-
 Consider the following program printing a string to the standard output
 character by character:
 

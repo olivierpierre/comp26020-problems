@@ -1,5 +1,3 @@
-# Video 6 Problem 2
-
 Write a program that takes up to 10 integers as command line parameters. These
 parameters are converted to integer types into an array of `int` named `array`.
 Then, the program iterates over the array and outputs if each number is even or

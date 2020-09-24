@@ -1,5 +1,3 @@
-# Lecture 0 Problem 1
-
 This is a fake exercise asking you to create an empty C program. To succeed in
 this exercise, simply write the following program:
 

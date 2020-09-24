@@ -1,5 +1,3 @@
-# Video 10 Problem 3
-
 Write a C program reading a string from the standard input and capitalize the
 first letter of each word.
 

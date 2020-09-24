@@ -1,5 +1,3 @@
-# Video 9 Problem 1
-
 Write a C program using `malloc` to allocate an array able to contain 10 `int`,
 fill this array with the 10 first natural number (starting with 0). Expected
 output:

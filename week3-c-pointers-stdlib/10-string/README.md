@@ -1,5 +1,3 @@
-# Video 10 Problem 1
-
 Write a C program reading a string from the standard input using `fgets`, and
 diplaying this string as follows:
 
