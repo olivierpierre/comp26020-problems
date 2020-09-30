@@ -40,7 +40,7 @@ it should produce the following output:
 [1678 - Elon] I'm taking an very important decision in office 42
 ```
 
-To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
+To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write `Employee.cpp` and `Employee.h`. Along with
 `inheritance2.cpp` in the local folder, use this command:
 ```shell

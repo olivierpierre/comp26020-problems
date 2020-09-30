@@ -17,7 +17,7 @@ And Following Our Will And Wind We May Just Go Where No One's Been
     See the `toupper` function:
     [https://linux.die.net/man/3/toupper](https://linux.die.net/man/3/toupper)
 
-To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
+To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write it in a file named `string3.c`. In a terminal,
 with that file in the local directory, check with this command:
 ```shell

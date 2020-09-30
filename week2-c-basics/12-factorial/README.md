@@ -14,7 +14,7 @@ the factorial of that integer on the standard output as follows:
 We assume that the parameter value can be up to 20, the maximum number which
 factorial can be stored in a 64 bits unsigned integer.
 
-To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
+To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write it in a file named `factorial.c`. In a
 terminal, with that file in the local directory, check with this command:
 

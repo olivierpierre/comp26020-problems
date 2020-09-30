@@ -18,7 +18,7 @@ res2: 1.000000
 res3: 1595255563434
 ```
 
-To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
+To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io). In a terminal, with all the mentioned source files in
 the local directory, check with this command:
 ```shell

@@ -20,7 +20,7 @@ An example of expected output is:
 0 2 4 6 8 5 6 7 8 9
 ```
 
-To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
+To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write it in a file named `vector.cpp`. In a
 terminal, with that file in the local directory, check with this command:
 ```shell

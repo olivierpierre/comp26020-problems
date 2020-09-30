@@ -12,7 +12,7 @@ Please enter the amount of random number to generate:
 Generated 10000000 numbers in 0.084871 seconds
 ```
 
-To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
+To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io). In a terminal,
 with that file in the local directory, check with this command:
 ```shell

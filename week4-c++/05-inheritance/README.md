@@ -39,7 +39,7 @@ c2's mileage is: 5000, steering wheels: 4
 m's mileage is:  50000, cc class: 500
 ```
 
-To check the correctness of your program, use CS50 [sandbox](sandbox.cs50.io)
+To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write it in a file named `inheritance.cpp`. In a
 terminal, with that file in the local directory, check with this command:
 ```shell
