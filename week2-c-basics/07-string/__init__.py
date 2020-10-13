@@ -28,7 +28,8 @@ def has_right_size(sources_buf):
 @check50.check(exists)
 def has_termination_character(sources_buf):
     string_re = "string\[9\]\s*=\s*'\\\\0'"
-    if not re.search(string_re, sources_buf):
+    string_re2 = "string\[8\]\s*=\s*'\\\\0'"
+    if not re.search(string_re, sources_buf) and not re.search(string_re2, sources_buf):
         raise check50.Failure("Cannot find string termination character")
 
 @check50.check(compiles)
