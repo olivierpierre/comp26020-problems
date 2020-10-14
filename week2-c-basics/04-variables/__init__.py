@@ -28,9 +28,9 @@ def has_format_specifier(sources_buf):
         raise check50.Failure("Could not find an integer format specifier "
                 "(%d or %i)")
     if "%f" not in buf and "%F" not in buf and "%q" not in buf and \
-            "%G" not in buf:
+            "%G" not in buf and "%lf" not in buf:
         raise check50.Failure("Could not find a floating point format "
-                "specifier (%f, %F, %q, %G)")
+                "specifier (%f, %F, %q, %G, %lf)")
 
 @check50.check(compiles)
 def output_correct():
