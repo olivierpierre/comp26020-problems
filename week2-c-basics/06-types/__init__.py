@@ -24,7 +24,7 @@ def check_type(sources_buf):
         raise check50.Failure("Could not find a declaration with the correct "
                 "type")
 
-    if not re.search(re1, sources_buf) and not re.search(re2, sources_buf):
+    if not re.search(re1, sources_buf) or not re.search(re2, sources_buf):
         raise check50.Failure("Could not find a declaration with the correct "
                 "type")
 
