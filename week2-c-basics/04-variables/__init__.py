@@ -3,14 +3,14 @@ import check50.c
 
 @check50.check()
 def exists():
-    check50.exists("variable.c")
-    with open("variable.c") as f:
+    check50.exists("variables.c")
+    with open("variables.c") as f:
         sources_buf = f.read()
     return sources_buf
 
 @check50.check(exists)
 def compiles():
-    check50.c.compile("variable.c", cc="gcc")
+    check50.c.compile("variables.c", cc="gcc")
 
 @check50.check(exists)
 def has_variables(sources_buf):
@@ -34,6 +34,6 @@ def has_format_specifier(sources_buf):
 
 @check50.check(compiles)
 def output_correct():
-    check50.run("./variable").stdout("int_var: [0-9]+", regex=True)\
+    check50.run("./variables").stdout("int_var: [0-9]+", regex=True)\
             .stdout("double_var: [0-9]+\.[0-9]+", regex=True)\
             .exit()
