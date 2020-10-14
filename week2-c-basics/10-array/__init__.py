@@ -26,8 +26,8 @@ def has_array(sources_buf):
 
 @check50.check(exists)
 def has_for_loop(sources_buf):
-    for_re = "for\(.*;.*;.*\)"
-    while_re = "while\(.*\)"
+    for_re = "for\s*\(.*;.*;.*\)"
+    while_re = "while\s*\(.*\)"
     if not re.search(for_re, sources_buf) and not re.search(while_re, sources_buf):
         raise check50.Failure("Did not found a for loop in sources")
 
