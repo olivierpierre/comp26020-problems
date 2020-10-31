@@ -9,9 +9,9 @@ int main(int argc, char **argv) {
     Motorbike m(50000, 500); // a Motorbike with mileage = 50000 miles and class 500cc
 
     printf("v's mileage is: %d\n", v.get_mileage());
-    printf("c1's mileage is: %d, steering wheels: %d\n", c1.get_mileage().
+    printf("c1's mileage is: %d, steering wheels: %d\n", c1.get_mileage(),
             c1.get_steering_wheels());
-    printf("c2's mileage is: %d, steering wheels: %d\n", c2.get_mileage().
+    printf("c2's mileage is: %d, steering wheels: %d\n", c2.get_mileage(),
             c2.get_steering_wheels());
     printf("m's mileage is:  %d, cc class: %d\n", m.get_mileage(),
             m.get_cc_class());
