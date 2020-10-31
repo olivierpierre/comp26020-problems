@@ -32,7 +32,7 @@ int main(int argc, char **argv) {
     }
 
     for(int i=0; i<10; i++) {
-        printf("array[%d] has %d wheels\n", i, get_number_of_wheels(array[i]));
+        printf("array[%d] has %d wheels\n", i, number_of_wheels(array[i]));
         delete array[i];
     }
 
