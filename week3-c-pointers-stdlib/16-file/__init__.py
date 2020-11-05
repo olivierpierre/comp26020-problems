@@ -4,6 +4,8 @@ import re
 
 expected_file = " world\nthis is a test file containing the word  several " \
     "times\nsome lines do not contain that word\nwhile others do: \n"
+expected_file2 = " world\nthis is a test file containing the word  several " \
+    "times\nsome lines do not contain that word\nwhile others do: "
 
 @check50.check()
 def exists():
@@ -23,7 +25,7 @@ def output_correct():
             .exit()
     with open("sample-file-1-processed") as f:
         buf = f.read()
-        if not (buf == expected_file):
+        if not (buf == expected_file) and not (buf == expected_file2):
             print("------ got: --------")
             print(buf)
             print("---- expected: -----")
