@@ -29,6 +29,6 @@ def output_correct():
             print("------ got: --------")
             print(buf)
             print("---- expected: -----")
-            print(expected_file)
+            print(expected_file2)
             raise check50.Failure("Bad output file")
 
