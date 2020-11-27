@@ -18,10 +18,12 @@ def validate(sources_buf):
     if not re.search("\s*private:", sources_buf):
         raise check50.Failure("Could not find private visibility keyword")
     if not re.search("Rectangle r\(10, 20\)", sources_buf) and \
+            not re.search("r\s*=\s*Rectangle\(10, 20\)", sources_buf) and \
             not re.search("r\s*=\s*new\s+Rectangle\(10, 20\)", sources_buf):
                 raise check50.Failure("Could not find call to Rectangle constructor")
     if not re.search("Circle c\(1\)", sources_buf) and \
-            not re.search("c\s*=\s*new\s+Circle\(1\)", sources_buf):
+            not re.search("c\s*=\s*Circle\(1\)", sources_buf) and \
+            not re.search("c\s*=\s+new\s+Circle\(1\)", sources_buf):
                 raise check50.Failure("Could not find call to Circle constructor")
     if not re.search("r\.get_length\(\)", sources_buf) and \
             not re.search("r->get_length\(\)", sources_buf):
