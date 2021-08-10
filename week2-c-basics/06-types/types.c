@@ -2,9 +2,9 @@
 
 int main() {
 
-    variable = -725230241886380040;
+    variable = 10;
 
-    printf("variable is %ld\n", variable);
+    printf("variable is %u\n", variable);
 
     return 0;
 }

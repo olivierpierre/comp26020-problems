@@ -3,12 +3,15 @@ import check50.c
 
 @check50.check()
 def exists():
-    check50.exists("goodbye.c")
+    check50.exists("printf.c")
 
 @check50.check(exists)
 def compiles():
-    check50.c.compile("goodbye.c", cc="gcc")
+    check50.c.compile("printf.c", cc="gcc")
 
 @check50.check(compiles)
-def goodbye_printed():
-    check50.run("./goodbye").stdout("[Gg]oodbye, [Ww]orld!", regex=True).exit()
+def large_c_printed():
+    check50.run("./printf").stdout("    ######\n").stdout("  ##      ##\n")\
+            .stdout(" #\n").stdout(" #\n").stdout(" #\n").stdout(" #\n")\
+            .stdout(" #\n").stdout("  ##      ##\n").stdout("    ######\n")\
+            .exit()

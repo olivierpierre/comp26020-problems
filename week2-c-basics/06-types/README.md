@@ -5,9 +5,9 @@ The following code fails to compile due to a missing variable declaration:
 
 int main() {
 
-    variable = -725230241886380040;
+    variable = 10;
 
-    printf("variable is %lld\n", variable);
+    printf("variable is %u\n", variable);
 
     return 0;
 }
@@ -15,7 +15,7 @@ int main() {
 
 Edit the code to have it compile and run successfully. The expected output is:
 ```
-variable is -725230241886380040
+variable is 10
 ```
 
 To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
