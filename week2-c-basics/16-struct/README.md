@@ -14,12 +14,16 @@ corresponding to the two timestamps. The addition is realized in a function
 named `add_timestamps` that takes 2 timestamp parameters and return the
 sum as a timestamp. Here are some output examples:
 
-```shell
+```bash
 # 5h11m44s + 12h30m3s = 17h41m47s
 ./timestamp 5 11 44 12 30 3
 17 41 47
+
+# 10h30m50s + 1h5m15s = 11h36m5s
 ./timestamp 10 30 50 1 5 15
 11 36 5
+
+# 14h12m5s + 22h5m0s = 36h17m5s
 ./timestamp 14 12 5 22 5 0
 36 17 5
 ```

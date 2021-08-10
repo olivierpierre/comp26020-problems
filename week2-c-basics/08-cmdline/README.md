@@ -10,7 +10,9 @@ of these 3 numbers. Examples of execution:
 13.100750
 ```
 
-Tips: use double rather than floats for passing the checks.
+!!! warning "Warning"
+    Use the type `double` rather than `float` to hold these values in order to
+    pass the checks.
 
 To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write it in a file named `cmdline.c`. In a terminal,
