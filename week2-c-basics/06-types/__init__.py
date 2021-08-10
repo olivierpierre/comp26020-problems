@@ -15,7 +15,7 @@ def compiles():
 
 @check50.check(exists)
 def check_type(sources_buf):
-    re1 = "^\s*unsigned\s+(int\s+)?variable"
+    re1 = "\s*unsigned\s+(int\s+)?variable"
 
     if not re.search(re1, sources_buf):
         print(sources_buf)
