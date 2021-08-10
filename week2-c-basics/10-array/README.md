@@ -19,12 +19,12 @@ odd as follows:
 ```
 
 !!! note "Modulo in C"
-    The modulo operating in C is `%`, for example: `42 % 2` evaluates to `0`
+    The modulo operator in C is `%`, for example: `42 % 2` evaluates to `0`
     and `41 % 2` evaluates to `1`.
 
 To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write it in a file named `array.c`. In a terminal,
 with that file in the local directory, check with this command:
 ```shell
-check50 -l --log olivierpierre/comp26020-problems/master/week2-c-basics/10-array
+check50 -l --ansi-log olivierpierre/comp26020-problems/2021-2022/week2-c-basics/10-array
 ```
