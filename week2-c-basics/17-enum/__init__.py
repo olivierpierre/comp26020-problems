@@ -29,8 +29,10 @@ def declare_enum_var(sources_buf):
 
 @check50.check(exists)
 def cases_enum(sources_buf):
-    if not re.search(re3, sources_buf):
-        raise check50.Failure("Can't find usage of the enum value in case statements")
+    for day in ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", \
+            "SATURDAY", "SUNDAY"]:
+        if not re.search(re3.replace("__DAY__", day), sources_buf):
+            raise check50.Failure("Can't find usage of the enum value in case statements")
 
 @check50.check(compiles)
 def output_correct():
