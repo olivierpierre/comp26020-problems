@@ -1,33 +1,39 @@
-Consider the following program:
+With a [linked list](https://en.wikipedia.org/wiki/Linked_list), the
+programmer uses pointer chains to link together data structures. In the example
+program below, a simple linked list with 3 elements is constructed then the
+value of the last element is printed:
 
 ```c
 #include <stdio.h>
-#include <stdlib.h>
 
-int add(int a, int b) {
-    return a + b;
-}
+/* Typedef struct forward declaration for the pointer member */
+typedef struct s_list_member list_member;
+
+typedef struct s_list_member {
+    int value;
+    list_member *next;
+} list_member;
 
 int main(int argc, char **argv) {
-    if(argc == 3) {
-        int a = atoi(argv[1]);
-        int b = atoi(argv[2]);
+    list_member lm1, lm2, lm3;
 
-        printf("%d + %d = %d\n", a, b, add(a, b));
-    }
+    lm1.value = 1; lm1.next = &lm2;
+    lm2.value = 2; lm2.next = &lm3;
+    lm3.value = 3; lm3.next = 0x0;
+
+    printf("third member value is: %d\n", lm3.value);
+
     return 0;
 }
 ```
 
-Modify the function `add` and its invocation so that it takes two `int` pointer
-parameters. Examples of output:
+Modify the second parameter of the call to `printf` in order to print the value
+of the third element by using the first member `lm1` and following the pointer
+chain leading to the value of `lm3`. The expected output is:
 
 ```shell
-./pointer2 10 20
-10 + 20 = 30
-
-./pointer2 154 -12
-154 + -12 = 142
+./pointer2
+third member value is: 3
 ```
 
 To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)

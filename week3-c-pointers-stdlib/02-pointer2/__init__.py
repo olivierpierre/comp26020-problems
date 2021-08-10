@@ -14,13 +14,18 @@ def compiles():
     check50.c.compile("pointer2.c", cc="gcc")
 
 @check50.check(exists)
-def function_call(sources_buf):
-    if not re.search("add\s*\(.*\*.*,.*\*.*\)", sources_buf):
-        raise check50.Failure("The add function does not seem to be defined"
-                "with pointer parameters")
+def validate(sources_buf):
+    if re.search("printf\(.*,\s*.*lm3.*\)", sources_buf):
+        raise check50.Failure("Do not use lm3 in printf parameters")
+    if re.search("printf\(.*,\s*.*lm2.*\)", sources_buf):
+        raise check50.Failure("Do not use lm2 in printf parameters")
+
+@check50.check(exists)
+def validate2(sources_buf):
+    if not re.search("printf\(.*,\s*lm1\s*.\s*next\s*->\s*next\s*->value\s*\)",
+            sources_buf):
+        raise check50.Failure("Could not find the proper pointer chain walk")
 
 @check50.check(compiles)
 def output_correct():
-    check50.run("./pointer2 10 20").stdout("10 \+ 20 = 30").exit()
-    check50.run("./pointer2 114324 412443").stdout("114324 \+ 412443 = 526767").exit()
-    check50.run("./pointer2 -46546 6544").stdout("-46546 \+ 6544 = -40002").exit()
+    check50.run("./pointer2").stdout("third member value is: 3").exit()

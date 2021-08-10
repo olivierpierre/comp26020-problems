@@ -1,18 +1,34 @@
-Write a program that takes an integer as parameter and places it in a variable
-of type `int`. The program then proceeds to print the value as well as the
-address of the variable as follows:
+Consider the following program:
 
-```shell
-./pointer 5
-Variable contains 5 and is located @0x7ffcc6d1d7fc
+```c
+#include <stdio.h>
+#include <stdlib.h>
 
-./pointer 93
-Variable contains 93 and is located @0x7fffec3b3dfc
+int add(int a, int b) {
+    return a + b;
+}
+
+int main(int argc, char **argv) {
+    if(argc == 3) {
+        int a = atoi(argv[1]);
+        int b = atoi(argv[2]);
+
+        printf("%d + %d = %d\n", a, b, add(a, b));
+    }
+    return 0;
+}
 ```
 
-!!! note "Printing pointers"
-    Pointer can be printed in hexadecimal and prefixed with `0x` using the
-    `%p` format specifier for `printf`.
+Modify the function `add` and its invocation so that it takes two `int` pointer
+parameters. Examples of output:
+
+```shell
+./pointer 10 20
+10 + 20 = 30
+
+./pointer 154 -12
+154 + -12 = 142
+```
 
 To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write it in a file named `pointer.c`. In a terminal,
