@@ -1,21 +1,51 @@
-Write a C program defining an `enum` with one named value per month of the
-year, i.e. `JANUARY`, `FEBRUARY`, `MARCH`, etc. The program prints the numberic
-value associated with each month. Example of output:
+The program below uses integer to represent days of the week, 0
+corresponding to Monday, 1 to Tuesday, etc.
 
-```shell
+```c
+#include <stdio.h>
+
+int main(int argc, char **argv) {
+    int d = 2;
+
+    printf("Today is: ");
+    switch(d) {
+        case 0:
+            printf("Monday\n");
+            break;
+        case 1:
+            printf("Tuesday\n");
+            break;
+        case 2:
+            printf("Wednesday\n");
+            break;
+        case 3:
+            printf("Thursday\n");
+            break;
+        case 4:
+            printf("Friday\n");
+            break;
+        case 5:
+            printf("Saturday\n");
+            break;
+        case 6:
+            printf("Sunday\n");
+            break;
+
+        default:
+            printf("Unknown day...\n");
+    }
+    return 0;
+}
+```
+
+Replace the use of integers with that of an enumeration named `enum day`,
+defining constants for days: `MONDAY`, `TUESDAY`, etc.
+
+The expected output is:
+
+```bash
 ./enum
-JANUARY: 0
-FEBRUARY: 1
-MARCH: 2
-APRIL: 3
-MAY: 4
-JUNE: 5
-JULY: 6
-AUGUST: 7
-SEPTEMBER: 8
-OCTOBER: 9
-NOVEMBER: 10
-DECEMBER: 11
+Today is: Wednesday
 ```
 
 To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
