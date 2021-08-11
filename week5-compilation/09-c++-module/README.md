@@ -20,5 +20,5 @@ To check the correctness of your program, use the department VM image with check
 or [IDE](ide.cs50.io). In a terminal, with all the mentioned source files in
 the local directory, check with this command:
 ```shell
-check50 -l --log olivierpierre/comp26020-problems/master/week5-compilation/09-c++-module
+check50 -l --log olivierpierre/comp26020-problems/2020-2021/week5-compilation/09-c++-module
 ```

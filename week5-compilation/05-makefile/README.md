@@ -18,5 +18,5 @@ or [IDE](ide.cs50.io). In a terminal,
 with all source files as well as the Makefile in the local directory, check
 with this command:
 ```shell
-check50 -l --log olivierpierre/comp26020-problems/master/week5-c++/05-makefile
+check50 -l --log olivierpierre/comp26020-problems/2020-2021/week5-c++/05-makefile
 ```
