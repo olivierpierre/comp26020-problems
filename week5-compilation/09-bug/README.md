@@ -25,8 +25,12 @@ Use GDB to debug this program and fix the bugs. An example of expected
 execution is as follows:
 
 ```shell
-
+Please enter an integer between 0 and 9999: 10
+array[10] = 362
 ```
+
+Note that you won't necessarily get 362 as the array's content is generated
+randomly, the important part is that the program does not segfault.
 
 To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write it in a file named `bug.c`. In a terminal,
