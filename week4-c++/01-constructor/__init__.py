@@ -19,7 +19,9 @@ def validate(sources_buf):
             re.search("p\.y\s*=\s*[0-9]+\s*;", sources_buf):
         raise check50.Failure("Should not initialize p's members in main")
     if "Pair p(10, 20);" not in sources_buf and \
-            "Pair p(10,20);" not in sources_buf:
+            "Pair p(10,20);" not in sources_buf and \
+            "Pair(10,20);" not in sources_buf and \
+            "Pair(10, 20);" not in sources_buf:
         raise check50.Failure("Couldn't find call to the constructor")
 
 @check50.check(compiles)
