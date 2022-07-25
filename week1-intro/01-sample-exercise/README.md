@@ -13,5 +13,5 @@ check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io) or
 terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2021-2022/week1-intro/01-sample-exercise
+check50 -l --ansi-log olivierpierre/comp26020-problems/2022-2023/week1-intro/01-sample-exercise
 ```

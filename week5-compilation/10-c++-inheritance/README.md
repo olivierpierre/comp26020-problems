@@ -44,5 +44,5 @@ To check the correctness of your program, use the department VM image with check
 or [IDE](ide.cs50.io) and write `Employee.cpp` and `Employee.h`. Along with
 `inheritance2.cpp` in the local folder, use this command:
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2021-2022/week5-compilation/10-c++-inheritance
+check50 -l --ansi-log olivierpierre/comp26020-problems/2022-2023/week5-compilation/10-c++-inheritance
 ```
