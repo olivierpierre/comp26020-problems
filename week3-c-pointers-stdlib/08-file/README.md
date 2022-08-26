@@ -19,13 +19,7 @@ some lines do not contain that word
 while others do: 
 ```
 
-You can create `sample-file-1` with the following content:
-```shell
-hello world
-this is a test file containing the word hello several times
-some lines do not contain that word
-while others do: hello
-```
+You download `sample-file-1` [here](sample-file-1).
 
 To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
 or [IDE](ide.cs50.io) and write it in a file named `file.c`. In a terminal,
