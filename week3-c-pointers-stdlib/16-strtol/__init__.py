@@ -16,8 +16,8 @@ def compiles():
 @check50.check(compiles)
 def output_correct():
     check50.run("./strtol")\
-            .stdout("please enter an integer number (base 10):")\
-            .stdin("42")\
+            .stdout("number:")\
+            .stdin("42\n")\
             .stdout("you have entered: 42")\
             .exit()
 
