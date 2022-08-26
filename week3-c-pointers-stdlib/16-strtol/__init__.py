@@ -33,3 +33,15 @@ def output_correct():
             .stdout("invalid string")\
             .exit()
 
+    check50.run("./strtol")\
+            .stdout("please enter an integer number \(base 10\):")\
+            .stdin("100000000000000000000\n")\
+            .stdout("under/overflow")\
+            .exit()
+
+    check50.run("./strtol")\
+            .stdout("please enter an integer number \(base 10\):")\
+            .stdin("-100000000000000000000\n")\
+            .stdout("under/overflow")\
+            .exit()
+
