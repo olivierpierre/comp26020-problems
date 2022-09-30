@@ -35,8 +35,9 @@ The expected output is:
 [2.500000, 1.100000, 12.420000]
 ```
 
-To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
-or [IDE](ide.cs50.io) and write it in a file named `cast.c`. In a terminal,
+To check the correctness of your program, use a Linux distribution with
+check50 installed or alternatively CS50 [sandbox](https://sandbox.cs50.io/) or
+[IDE](https://code.cs50.io/) and write it in a file named `cast.c`. In a terminal,
 with that file in the local directory, check with this command:
 ```shell
 check50 -l --ansi-log olivierpierre/comp26020-problems/2022-2023/week5-compilation/05-cast

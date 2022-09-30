@@ -13,8 +13,9 @@ object files.
 You can download all the aforementioned source filed in a compressed archive
 [here](src.zip).
 
-To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
-or [IDE](ide.cs50.io). In a terminal,
+To check the correctness of your program, use a Linux distribution with
+check50 installed or alternatively CS50 [sandbox](https://sandbox.cs50.io/) or
+[IDE](https://code.cs50.io/). In a terminal,
 with all source files as well as the Makefile in the local directory, check
 with this command:
 ```shell
