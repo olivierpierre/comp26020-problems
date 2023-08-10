@@ -64,10 +64,11 @@ FLAG3 enabled
       sections
       [here](https://en.cppreference.com/w/c/language/operator_arithmetic)
 
-To check the correctness of your program, use a Linux distribution with
-check50 installed or alternatively CS50 [sandbox](https://sandbox.cs50.io/) or
-[IDE](https://code.cs50.io/) and write it in a file named `enum2.c`. In a terminal,
-with that file in the local directory, check with this command:
+To check the correctness of your program, use a
+[Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer)
+and write your solution in a file named `enum2.c`. In a
+terminal, with that file in the local directory, check with this command:
+
 ```shell
 check50 -l --ansi-log olivierpierre/comp26020-problems/2022-2023/week2-c-basics/17-enum2
 ```
