@@ -11,4 +11,4 @@ def compiles():
 
 @check50.check(compiles)
 def large_c_printed():
-    check50.run("./printf").stdout("    ######\n  ##      ##\n #\n #\n #\n #\n #\n  ##      ##\n    ######\n").exit()
+    check50.run("./printf").stdout("   ######\n  ##      ##\n #\n #\n #\n #\n #\n  ##      ##\n    ######\n").exit()
