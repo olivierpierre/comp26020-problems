@@ -70,5 +70,5 @@ and write your solution in a file named `enum2.c`. In a
 terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2022-2023/week2-c-basics/17-enum2
+check50 -l --ansi-log olivierpierre/comp26020-problems/2023-2024/week2-c-basics/17-enum2
 ```

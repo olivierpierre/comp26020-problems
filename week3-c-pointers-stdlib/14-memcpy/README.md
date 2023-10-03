@@ -26,5 +26,5 @@ and write your solution in a file named `memcpy.c`. In a
 terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2022-2023/week3-c-pointers-stdlib/14-memcpy
+check50 -l --ansi-log olivierpierre/comp26020-problems/2023-2024/week3-c-pointers-stdlib/14-memcpy
 ```

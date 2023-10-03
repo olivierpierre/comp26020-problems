@@ -24,5 +24,5 @@ In a terminal, with all the mentioned source files in the local directory,
 check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2022-2023/week5-compilation/03-module
+check50 -l --ansi-log olivierpierre/comp26020-problems/2023-2024/week5-compilation/03-module
 ```
