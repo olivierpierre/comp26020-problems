@@ -2,15 +2,15 @@ Write a C program displaying a large 11x9 characters 'C' using dashes.
 The expected output is:
 
 ```c
-    ######
-  ##      ##
- #
- #
- #
- #
- #
-  ##      ##
-    ######
+   ######
+ ##      ##
+#
+#
+#
+#
+#
+ ##      ##
+   ######
 ```
 
 To check the correctness of your program, use a
