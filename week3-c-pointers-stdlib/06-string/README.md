@@ -23,5 +23,5 @@ and write your solution in a file named `string.c`. In a
 terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2023-2024/week3-c-pointers-stdlib/11-string
+check50 -l --ansi-log olivierpierre/comp26020-problems/2023-2024/week3-c-pointers-stdlib/06-string
 ```
