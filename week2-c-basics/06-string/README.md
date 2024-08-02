@@ -1,5 +1,4 @@
-The following program is supposed to print `hi there` on the standard output
-and exit:
+The following program is supposed to print `hi there` on the standard output and exit:
 ```c
 #include <stdio.h>
 
@@ -22,7 +21,7 @@ int main(int argc, char **argv) {
 }
 ```
 
-However when compiled and executed it prints additional gabage values:
+However, when compiled and executed it prints additional garbage values:
 ```
 gcc string.c -o string
 ./string
@@ -35,14 +34,11 @@ Modify the program so that it produces the expected output:
 hi there
 ```
 
-The string should still be created in the code in a character by character
-basis, i.e. solutions using `char string[] = "hi there"` will not be accepted.
+The string should still be created in the code in a character by character basis, i.e. solutions using `char string[] = "hi there"` will not be accepted.
 
-To check the correctness of your program, use a
-[Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer)
-and write your solution in a file named `string.c`. In a
-terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer) and write your solution in a file named **`string.c`**.
+In a terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2023-2024/week2-c-basics/06-string
+check50 -l --ansi-log olivierpierre/comp26020-problems/2024-2025/week2-c-basics/06-string
 ```

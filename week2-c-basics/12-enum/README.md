@@ -1,5 +1,4 @@
-The program below uses integer to represent days of the week, 0
-corresponding to Monday, 1 to Tuesday, etc.
+The [program](./comp26020-problems/week2-c-basics/12-enum/enum.c) below uses integer to represent days of the week, 0 corresponding to Monday, 1 to Tuesday, etc.
 
 ```c
 #include <stdio.h>
@@ -38,8 +37,7 @@ int main(int argc, char **argv) {
 }
 ```
 
-Replace the use of integers with that of an enumeration named `enum day`,
-defining constants for days: `MONDAY`, `TUESDAY`, etc.
+Replace the use of integers with that of an enumeration named `enum day`, defining constants for days: `MONDAY`, `TUESDAY`, etc.
 
 The expected output is:
 
@@ -48,11 +46,9 @@ The expected output is:
 Today is: Wednesday
 ```
 
-To check the correctness of your program, use a
-[Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer)
-and write your solution in a file named `enum.c`. In a
-terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer) and write your solution in a file named **`enum.c`**.
+In a terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2023-2024/week2-c-basics/12-enum
+check50 -l --ansi-log olivierpierre/comp26020-problems/2024-2025/week2-c-basics/12-enum
 ```

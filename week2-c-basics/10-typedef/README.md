@@ -1,5 +1,4 @@
-The program below prints the dimensions of a rectangle passed from the command
-line arguments:
+The [program](./comp26020-problems/week2-c-basics/10-typedef/typedef.c) below prints the dimensions of a rectangle passed from the command line arguments:
 
 ```c
 #include <stdio.h>
@@ -38,11 +37,9 @@ Modify this program to use `typedef` to alias:
 - `struct s_rectangle` into `rectangle`
 - `unsigned long long int` into `ull`
 
-To check the correctness of your program, use a
-[Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer)
-and write your solution in a file named `typedef.c`. In a
-terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer) and write your solution in a file named **`typedef.c`**.
+In a terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2023-2024/week2-c-basics/10-typedef
+check50 -l --ansi-log olivierpierre/comp26020-problems/2024-2025/week2-c-basics/10-typedef
 ```
