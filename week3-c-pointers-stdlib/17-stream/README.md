@@ -1,9 +1,7 @@
-This is a variation of a [previous exercise](../08-file) targetting file I/O.
-The goal is similar: write a C program taking as command line parameter A) a
-file name `f` and B) a word `w`. The program then creates the file
-`f-processed` which is a copy of `f` where all occurences of the word `w` have
-been deleted. This time, you should use the stream-based file I/O functions
-(`fopen`, `fread`, and `fwrite`) to write the program. 
+This is a variation of a [previous exercise](../08-file) targeting file I/O.
+The goal is similar: write a C program taking as command line parameter A) a file name `f` and B) a word `w`.
+The program then creates the file `f-processed` which is a copy of `f` where all occurrences of the word `w` have been deleted.
+This time, you should use the stream-based file I/O functions (`fopen`, `fread`, and `fwrite`) to write the program. 
 
 Here is an example of execution:
 
@@ -23,14 +21,12 @@ some lines do not contain that word
 while others do: 
 ```
 
-You download `sample-file-1` [here](sample-file-1).
+You download `sample-file-1` [here](./comp26020-problems/week3-c-pointers-stdlib/17-stream/sample-file-1).
 
-To check the correctness of your program, use a
-[Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer)
-and write your solution in a file named `stream.c`. In a
-terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer) and write your solution in a file named `stream.c`.
+In a terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2023-2024/week3-c-pointers-stdlib/17-stream
+check50 -l --ansi-log olivierpierre/comp26020-problems/2024-2025/week3-c-pointers-stdlib/17-stream
 ```
 Make sure that `sample-file-1` is in the current directory alongside `stream.c`

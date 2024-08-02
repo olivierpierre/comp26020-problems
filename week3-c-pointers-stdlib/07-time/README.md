@@ -1,6 +1,5 @@
-Write a C program taking an integer `n` as command line parameter and sleeping
-for `n` seconds. The execution time of the `sleep` function is measured and
-displayed. Examples output:
+Write a C program taking an integer `n` as command line parameter and sleeping for `n` seconds.
+The execution time of the `sleep` function is measured and displayed. Examples output:
 
 ```shell
 ./time 3
@@ -16,5 +15,5 @@ and write your solution in a file named `time.c`. In a
 terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2023-2024/week3-c-pointers-stdlib/07-time
+check50 -l --ansi-log olivierpierre/comp26020-problems/2024-2025/week3-c-pointers-stdlib/07-time
 ```

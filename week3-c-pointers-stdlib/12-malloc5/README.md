@@ -32,9 +32,8 @@ int main(int argc, char **argv) {
 }
 ```
 
-Write the function `my_realloc` that changes the size of a buffer previously
-allocated with `malloc` while preserving all or part of the buffer content
-according to the requested size. The function parameters are:
+Write the function `my_realloc` that changes the size of a buffer previously allocated with `malloc` while preserving all or part of the buffer content according to the requested size.
+The function parameters are:
 - `ptr`: buffer address
 - `old_size`: current size of the buffer
 - `new_size`: new size requested
@@ -59,23 +58,17 @@ after realloc, array[8] = 80
 after realloc, array[9] = 90
 ```
 
-!!! note "Memory copy in C"
-    Memory copy is achieved with the `memcpy` function that takes 3 arguments:
-    the destination address, the source address, and the number of bytes to
-    copy. To use it you'll need to `#include <string.h>`. See
-    [here](https://man7.org/linux/man-pages/man3/memcpy.3.html) for more info.
+> **Memory copy in C.**
+> Memory copy is achieved with the `memcpy` function that takes 3 arguments: the destination address, the source address, and the number of bytes to copy.
+> To use it you'll need to `#include <string.h>`.
+> See [here](https://man7.org/linux/man-pages/man3/memcpy.3.html) for more information.
 
-!!! note "Realloc"
-    Although this functionality already exists in the form of the standard
-    function `realloc` (see
-    [here](https://man7.org/linux/man-pages/man3/realloc.3.html) -- for the
-    sake of the exercize it is asked to implement it manually here.
+> **Realloc.**
+> Although this functionality already exists in the form of the standard function `realloc` (see [here](https://man7.org/linux/man-pages/man3/realloc.3.html) -- for the sake of the exercise it is asked to implement it manually here.
 
-To check the correctness of your program, use a
-[Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer)
-and write your solution in a file named `malloc5.c`. In a
-terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer) and write your solution in a file named `malloc5.c`.
+In a terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2023-2024/week3-c-pointers-stdlib/12-malloc5
+check50 -l --ansi-log olivierpierre/comp26020-problems/2024-2025/week3-c-pointers-stdlib/12-malloc5
 ```

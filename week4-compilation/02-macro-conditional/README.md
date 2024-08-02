@@ -1,7 +1,4 @@
-The program [macro-conditional.c](macro-conditional.c) is a variant of the
-program presented in the [previous exercize](../macro), where many debug
-messages are printed on the standard output:
-
+The program [macro-conditional.c](./comp26020-problems/week4-compilation/02-macro-conditional/macro-conditional.c) is a variant of the program presented in the previous exercise, where many debug messages are printed on the standard output:
 
 ```shell
 ./macro-conditional
@@ -20,11 +17,8 @@ bin 4: [080 - 100[ *******************
 [DEBUG] Memory freed
 ```
 
-Update the program so that the display of the debug output happens only when
-the macro `DEBUGMODE` is defined. Do not define the macro itself in the code,
-we will rather use the
-[-D](https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html) gcc
-parameter to do so at compile time:
+Update the program so that the display of the debug output happens only when the macro `DEBUGMODE` is defined.
+Do not define the macro itself in the code, we will rather use the [-D](https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html) gcc parameter to do so at compile time:
 
 ```
 gcc -DDEBUGMODE macro-conditional.c -o macro-conditional
@@ -36,12 +30,9 @@ gcc macro-conditional.c -o macro-conditional
 # Debug output suppressed
 ```
 
-
-To check the correctness of your program, use a
-[Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer)
-and write your solution in a file named `macro-conditional.c`. In a
-terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer) and write your solution in a file named `macro-conditional.c`.
+In a terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2023-2024/week5-compilation/02-macro-conditional
+check50 -l --ansi-log olivierpierre/comp26020-problems/2024-2025/week5-compilation/02-macro-conditional
 ```

@@ -1,7 +1,5 @@
-In C, characters are encoded in memory using ascii code. Knowing that there
-is a constant offset between the code for a given letter in lowecase and the
-code for that letter in capital, complete the `capitalize` function in the
-program [ascii.c](ascii.c) presented below:
+In C, characters are encoded in memory using ascii code.
+Knowing that there is a constant offset between the code for a given letter in lowercase and the code for that letter in capital, complete the `capitalize` function in the program [ascii.c](./comp26020-problems/week4-compilation/07-ascii/ascii.c) presented below:
 
 ```c
 #include <stdio.h>
@@ -21,11 +19,9 @@ int main(int argc, char **argv) {
 }
 ```
 
-!!! note "Ascii code in C" 
-     - When printed as an integer with the `%d` marker, the ascii code for a
-       given `char` variable can be displayed.
-     - You can also check out some ascii tables such as 
-       [this one](http://www.asciitable.com/).
+> **Ascii code in C.**
+> - When printed as an integer with the `%d` marker, the ascii code for a given `char` variable can be displayed.
+> - You can also check out some ascii tables such as [this one](http://www.asciitable.com/).
 
 The expected output is:
 
@@ -46,5 +42,5 @@ and write your solution in a file named `ascii.c`. In a
 terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2023-2024/week5-compilation/08-ascii
+check50 -l --ansi-log olivierpierre/comp26020-problems/2024-2025/week5-compilation/07-ascii
 ```

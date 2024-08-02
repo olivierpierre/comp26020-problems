@@ -1,5 +1,4 @@
-Complete the program [cast.c](cast.c) by writing the generic array printing
-function `array_print`:
+Complete the program [cast.c](./comp26020-problems/week4-compilation/05-cast/cast.c) by writing the generic array printing function `array_print`:
 
 ```c
 #include <stdio.h>
@@ -35,11 +34,9 @@ The expected output is:
 [2.500000, 1.100000, 12.420000]
 ```
 
-To check the correctness of your program, use a
-[Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer)
-and write your solution in a file named `cast.c`. In a
-terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer) and write your solution in a file named `cast.c`.
+In a terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2023-2024/week5-compilation/05-cast
+check50 -l --ansi-log olivierpierre/comp26020-problems/2024-2025/week5-compilation/05-cast
 ```
