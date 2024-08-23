@@ -57,7 +57,7 @@ FLAG3 enabled
 >   - bitwise shift, left `<<` and right `>>`
 >    - etc. For more information see the *Bitwise logic and shifts operators* sections [here](https://en.cppreference.com/w/c/language/operator_arithmetic)
 
-To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer) and write your solution in a file named **`enum2.c`**.
+To check the correctness of your program, use a use a [Linux distribution](https://github.com/olivierpierre/comp26020-devcontainer) with [check50 installed](exercise-set-1.html#installing-check50) and write your solution in a file named **`enum2.c`**.
 In a terminal, with that file in the local directory, check with this command:
 
 ```shell

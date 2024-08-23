@@ -11,7 +11,7 @@ Write a C program that takes 3 floating point numbers as command line parameters
 > **Warning**.
 > Use the type `double` rather than `float` to hold these values in order to pass the checks.
 
-To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer) and write your solution in a file named **`cmdline.c`**.
+To check the correctness of your program, use a use a [Linux distribution](https://github.com/olivierpierre/comp26020-devcontainer) with [check50 installed](exercise-set-1.html#installing-check50) and write your solution in a file named **`cmdline.c`**.
 In a terminal, with that file in the local directory, check with this command:
 
 ```shell

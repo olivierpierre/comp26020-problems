@@ -17,7 +17,7 @@ array2: 32 32 54 12 52 56 8 30 44 94 44 39 65 19 51
 > See the `rand` function: [https://linux.die.net/man/3/rand](https://linux.die.net/man/3/rand).
 > For example to get a random integer between 0 and 9 (included): `int random_int = rand()%10`.
 
-To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer) and write your solution in a file named `memcpy.c`.
+To check the correctness of your program, use a use a [Linux distribution](https://github.com/olivierpierre/comp26020-devcontainer) with [check50 installed](exercise-set-1.html#installing-check50) and write your solution in a file named `memcpy.c`.
 In a terminal, with that file in the local directory, check with this command:
 
 ```shell

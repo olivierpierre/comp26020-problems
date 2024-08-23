@@ -10,7 +10,7 @@ Include also a `clean` rule to delete the executable and intermediate object fil
 
 You can download all the aforementioned source filed in a compressed archive [here](./comp26020-problems/week4-compilation/04-makefile/src.zip).
 
-To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer).
+To check the correctness of your program, use a use a [Linux distribution](https://github.com/olivierpierre/comp26020-devcontainer) with [check50 installed](exercise-set-1.html#installing-check50).
 In a terminal, with all source files as well as the Makefile in the local directory, check with this command:
 
 ```shell

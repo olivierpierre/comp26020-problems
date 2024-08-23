@@ -25,7 +25,7 @@ The numbers should be stored in a 2-dimensional array allocated with `malloc` be
 99 100 101 102 103 104 105 106 107 108 109
 ```
 
-To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer) and write your solution in a file named `malloc2.c`.
+To check the correctness of your program, use a use a [Linux distribution](https://github.com/olivierpierre/comp26020-devcontainer) with [check50 installed](exercise-set-1.html#installing-check50) and write your solution in a file named `malloc2.c`.
 In a terminal, with that file in the local directory, check with this command:
 
 ```shell

@@ -30,7 +30,7 @@ array[10] = 362
 
 Note that you won't necessarily get 362 as the array's content is generated randomly, the important part is that the program does not segfault.
 
-To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer) and write your solution in a file named `bug.c`.
+To check the correctness of your program, use a use a [Linux distribution](https://github.com/olivierpierre/comp26020-devcontainer) with [check50 installed](exercise-set-1.html#installing-check50) and write your solution in a file named `bug.c`.
 In a terminal, with that file in the local directory, check with this command:
 
 ```shell

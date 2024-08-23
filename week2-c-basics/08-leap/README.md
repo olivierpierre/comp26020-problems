@@ -17,7 +17,7 @@ The output format should be as described in these examples:
 2100 is not a leap year
 ```
 
-To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer) and write your solution in a file named **`leap.c`**.
+To check the correctness of your program, use a use a [Linux distribution](https://github.com/olivierpierre/comp26020-devcontainer) with [check50 installed](exercise-set-1.html#installing-check50) and write your solution in a file named **`leap.c`**.
 In a terminal, with that file in the local directory, check with this command:
 
 ```shell

@@ -29,7 +29,7 @@ Modify the function `add` and its invocation so that it takes two `int` pointer 
 154 + -12 = 142
 ```
 
-To check the correctness of your program, use a [Linux distribution with check50 installed](https://github.com/olivierpierre/comp26020-devcontainer) and write your solution in a file named `pointer.c`.
+To check the correctness of your program, use a use a [Linux distribution](https://github.com/olivierpierre/comp26020-devcontainer) with [check50 installed](exercise-set-1.html#installing-check50) and write your solution in a file named `pointer.c`.
 In a terminal, with that file in the local directory, check with this command:
 
 ```shell
