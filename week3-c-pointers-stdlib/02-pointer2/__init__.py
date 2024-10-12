@@ -24,7 +24,8 @@ def validate(sources_buf):
 def validate2(sources_buf):
     if not re.search("printf\(.*,\s*lm1\s*.\s*next\s*->\s*next\s*->value\s*\)",
             sources_buf) and \
-    not re.search("printf\(.*\(\s*\*\s*\(\s*\*\s*lm1\s*\.\s*next\s*\)\s*\.\s*next\s*\)\s*\.\s*value\s*\)", sources_buf):
+    not re.search("printf\(.*\(\s*\*\s*\(\s*\*\s*lm1\s*\.\s*next\s*\)\s*\.\s*next\s*\)\s*\.\s*value\s*\)", sources_buf) and \
+    not re.search("printf\(.*\*\(\(\*\(lm1\.next\)\)\.next\)\)\.value", source_buf):
         raise check50.Failure("Could not find the proper pointer chain walk")
 
 @check50.check(compiles)
