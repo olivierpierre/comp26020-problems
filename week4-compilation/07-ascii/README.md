@@ -42,5 +42,5 @@ and write your solution in a file named `ascii.c`. In a
 terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2024-2025/week5-compilation/07-ascii
+check50 -l --ansi-log olivierpierre/comp26020-problems/2024-2025/week4-compilation/07-ascii
 ```

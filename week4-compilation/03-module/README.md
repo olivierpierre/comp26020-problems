@@ -20,7 +20,7 @@ To check the correctness of your program, use a use a [Linux distribution](https
 In a terminal, with all the mentioned source files in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2024-2025/week5-compilation/03-module
+check50 -l --ansi-log olivierpierre/comp26020-problems/2024-2025/week4-compilation/03-module
 ```
 
 ---
