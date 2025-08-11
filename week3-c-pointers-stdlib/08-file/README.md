@@ -24,6 +24,6 @@ To check the correctness of your program, use a use a [Linux distribution](https
 In a terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2024-2025/week3-c-pointers-stdlib/08-file
+check50 -l --ansi-log olivierpierre/comp26020-problems/2025-2026/week3-c-pointers-stdlib/08-file
 ```
 Make sure that `sample-file-1` is in the current directory alongside `file.c`
