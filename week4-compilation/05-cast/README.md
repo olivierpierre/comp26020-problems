@@ -38,5 +38,7 @@ To check the correctness of your program, use a [Linux distribution](https://git
 In a terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2025-2026/week4-compilation/05-cast
+check50 -l --ansi-log olivierpierre/comp26020-problems/main/week4-compilation/05-cast
 ```
+
+**Submission:** once your work is ready please submit it [here](https://comp26020.uom.pierreolivier.eu/).

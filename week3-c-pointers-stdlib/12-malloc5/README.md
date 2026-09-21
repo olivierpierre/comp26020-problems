@@ -70,5 +70,7 @@ To check the correctness of your program, use a [Linux distribution](https://git
 In a terminal, with that file in the local directory, check with this command:
 
 ```shell
-check50 -l --ansi-log olivierpierre/comp26020-problems/2025-2026/week3-c-pointers-stdlib/12-malloc5
+check50 -l --ansi-log olivierpierre/comp26020-problems/main/week3-c-pointers-stdlib/12-malloc5
 ```
+
+**Submission:** once your work is ready please submit it [here](https://comp26020.uom.pierreolivier.eu/).
