@@ -2,8 +2,8 @@ import check50
 import check50.c
 import re
 
-re1 = "struct\s+timestamp\s*{\s*unsigned int hour;\s*unsigned int minute;\s*unsigned int second;\s*};"
-re2 = "typedef\s+struct\s+.+\s*{\s*unsigned int hour;\s*unsigned int minute;\s*unsigned int second;\s*}\s*.+;"
+re1 = r"struct\s+timestamp\s*{\s*unsigned int hour;\s*unsigned int minute;\s*unsigned int second;\s*};"
+re2 = r"typedef\s+struct\s+.+\s*{\s*unsigned int hour;\s*unsigned int minute;\s*unsigned int second;\s*}\s*.+;"
 
 @check50.check()
 def exists():
@@ -24,7 +24,7 @@ def has_struct(sources_buf):
 
 @check50.check(exists)
 def has_function(sources_buf):
-    if not re.search("add_timestamps\(.*\)", sources_buf,
+    if not re.search(r"add_timestamps\(.*\)", sources_buf,
             re.DOTALL | re.MULTILINE):
         raise check50.Failure("Can't find the add_timestamps function")
 

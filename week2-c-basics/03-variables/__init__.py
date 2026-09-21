@@ -35,5 +35,5 @@ def has_format_specifier(sources_buf):
 @check50.check(compiles)
 def output_correct():
     check50.run("./variables").stdout("int_var: [0-9]+", regex=True)\
-            .stdout("double_var: [0-9]+\.[0-9]+", regex=True)\
+            .stdout(r"double_var: [0-9]+\.[0-9]+", regex=True)\
             .exit()

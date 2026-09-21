@@ -16,39 +16,39 @@ def compiles():
 @check50.check(compiles)
 def output_correct():
     check50.run("./triangle2 0").stdout("").exit()
-    check50.run("./triangle2 1").stdout("\*").exit()
+    check50.run("./triangle2 1").stdout(r"\*").exit()
     check50.run("./triangle2 3")\
-            .stdout("\*")\
-            .stdout("\*\*")\
-            .stdout("\*")\
+            .stdout(r"\*")\
+            .stdout(r"\*\*")\
+            .stdout(r"\*")\
             .exit()
     check50.run("./triangle2 2")\
-            .stdout("\*")\
-            .stdout("\*\*")\
-            .stdout("\*")\
+            .stdout(r"\*")\
+            .stdout(r"\*\*")\
+            .stdout(r"\*")\
             .exit()
     check50.run("./triangle2 5")\
-            .stdout("\*")\
-            .stdout("\*\*")\
-            .stdout("\*\*\*")\
-            .stdout("\*\*")\
-            .stdout("\*")\
+            .stdout(r"\*")\
+            .stdout(r"\*\*")\
+            .stdout(r"\*\*\*")\
+            .stdout(r"\*\*")\
+            .stdout(r"\*")\
             .exit()
     check50.run("./triangle2 15")\
-            .stdout("\*")\
-            .stdout("\*\*")\
-            .stdout("\*\*\*")\
-            .stdout("\*\*\*\*")\
-            .stdout("\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*")\
-            .stdout("\*\*\*\*")\
-            .stdout("\*\*\*")\
-            .stdout("\*\*")\
-            .stdout("\*")\
+            .stdout(r"\*")\
+            .stdout(r"\*\*")\
+            .stdout(r"\*\*\*")\
+            .stdout(r"\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*")\
+            .stdout(r"\*\*\*")\
+            .stdout(r"\*\*")\
+            .stdout(r"\*")\
             .exit()
 

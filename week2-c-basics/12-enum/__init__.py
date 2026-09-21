@@ -2,9 +2,9 @@ import check50
 import check50.c
 import re
 
-re1 = "enum\s*{\s*MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY|monday|tuesday|wednesday|thursday|friday|saturday|sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|\s*}.*;"
-re2 = "enum\s+day\s+d"
-re3 = "\n\s*case\s+__DAY__\s*:"
+re1 = r"enum\s*{\s*MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY|monday|tuesday|wednesday|thursday|friday|saturday|sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|\s*}.*;"
+re2 = r"enum\s+day\s+d"
+re3 = r"\n\s*case\s+__DAY__\s*:"
 
 @check50.check()
 def exists():

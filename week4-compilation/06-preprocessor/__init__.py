@@ -16,7 +16,7 @@ def compiles():
 
 @check50.check(exists)
 def validate(sources_buf):
-    if not re.search("#include\s+\"preprocessor\.h\"", sources_buf):
+    if not re.search(r'#include\s+"preprocessor\.h"', sources_buf):
         raise check50.Failure("preprocessor.h not included in preprocessor.c")
 
 @check50.check(compiles)
@@ -24,6 +24,6 @@ def output_correct():
     check50.run("./preprocessor")\
             .stdout("Please enter the amount of random number to generate:")\
             .stdin("10000000")\
-            .stdout("Generated 10000000 numbers in [0-9]+\.[0-9]+ seconds")\
+            .stdout(r"Generated 10000000 numbers in [0-9]+\.[0-9]+ seconds")\
             .exit()
 

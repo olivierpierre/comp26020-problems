@@ -16,30 +16,30 @@ def compiles():
 @check50.check(compiles)
 def output_correct():
     check50.run("./triangle 0").stdout("").exit()
-    check50.run("./triangle 1").stdout("\*").exit()
-    check50.run("./triangle 2").stdout("\*").stdout("\*\*").exit()
+    check50.run("./triangle 1").stdout(r"\*").exit()
+    check50.run("./triangle 2").stdout(r"\*").stdout(r"\*\*").exit()
     check50.run("./triangle 5")\
-            .stdout("\*")\
-            .stdout("\*\*")\
-            .stdout("\*\*\*")\
-            .stdout("\*\*\*\*")\
-            .stdout("\*\*\*\*\*")\
+            .stdout(r"\*")\
+            .stdout(r"\*\*")\
+            .stdout(r"\*\*\*")\
+            .stdout(r"\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*")\
             .exit()
     check50.run("./triangle 15")\
-            .stdout("\*")\
-            .stdout("\*\*")\
-            .stdout("\*\*\*")\
-            .stdout("\*\*\*\*")\
-            .stdout("\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*\*\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*\*\*\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*\*\*\*\*\*\*\*\*")\
-            .stdout("\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*")\
+            .stdout(r"\*")\
+            .stdout(r"\*\*")\
+            .stdout(r"\*\*\*")\
+            .stdout(r"\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*\*\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*\*\*\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*\*\*\*\*\*\*\*\*")\
+            .stdout(r"\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*")\
             .exit()
 

@@ -15,12 +15,12 @@ def compiles():
 
 @check50.check(exists)
 def function_call(sources_buf):
-    if not re.search("add\s*\(.*\*.*,.*\*.*\)", sources_buf):
+    if not re.search(r"add\s*\(.*\*.*,.*\*.*\)", sources_buf):
         raise check50.Failure("The add function does not seem to be defined"
                 "with pointer parameters")
 
 @check50.check(compiles)
 def output_correct():
-    check50.run("./pointer 10 20").stdout("10 \+ 20 = 30").exit()
-    check50.run("./pointer 114324 412443").stdout("114324 \+ 412443 = 526767").exit()
-    check50.run("./pointer -46546 6544").stdout("-46546 \+ 6544 = -40002").exit()
+    check50.run("./pointer 10 20").stdout(r"10 \+ 20 = 30").exit()
+    check50.run("./pointer 114324 412443").stdout(r"114324 \+ 412443 = 526767").exit()
+    check50.run("./pointer -46546 6544").stdout(r"-46546 \+ 6544 = -40002").exit()

@@ -15,9 +15,9 @@ def compiles():
 
 @check50.check(exists)
 def has_sizeof(sources_buf):
-    soi_re = "sizeof\(\s*int\s*\)"
-    sod_re = "sizeof\(\s*double\s*\)"
-    soull_re = "sizeof\(\s*unsigned\s*long\s*long\s*[int\s]*\)"
+    soi_re = r"sizeof\(\s*int\s*\)"
+    sod_re = r"sizeof\(\s*double\s*\)"
+    soull_re = r"sizeof\(\s*unsigned\s*long\s*long\s*[int\s]*\)"
 
     if not re.search(soi_re, sources_buf):
         raise check50.Failure("Could not find a call to sizeof(int)")
