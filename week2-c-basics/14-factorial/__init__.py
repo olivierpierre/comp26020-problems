@@ -1,6 +1,14 @@
 import check50
 import check50.c
+import math
 import re
+
+def check_factorial(n):
+    exp = f"{n}! = {math.factorial(n)}"
+    out = check50.run(f"./factorial {n}").stdout()
+    if not re.fullmatch(re.escape(exp) + r"\n?", out):
+        raise check50.Failure(f"With argument {n}: expected {exp!r}, got "
+                f"{out!r}")
 
 @check50.check()
 def exists():
@@ -15,15 +23,33 @@ def compiles():
 
 @check50.check(compiles)
 def output_correct():
-    check50.run("./factorial 0").stdout("1").exit()
-    check50.run("./factorial 1").stdout("1").exit()
-    check50.run("./factorial 2").stdout("2").exit()
-    check50.run("./factorial 3").stdout("6").exit()
-    check50.run("./factorial 4").stdout("24").exit()
-    check50.run("./factorial 5").stdout("120").exit()
-    check50.run("./factorial 6").stdout("720").exit()
-    check50.run("./factorial 10").stdout("3628800").exit()
-    check50.run("./factorial 15").stdout("1307674368000").exit()
-    check50.run("./factorial 17").stdout("355687428096000").exit()
-    check50.run("./factorial 20").stdout("2432902008176640000").exit()
+    """correct output for 0 to 10"""
+    for n in range(11):
+        check_factorial(n)
 
+@check50.check(compiles)
+def large_values():
+    """correct output for 11 to 20 (13! and above exceed 32 bits)"""
+    for n in range(11, 21):
+        check_factorial(n)
+
+@check50.check(exists)
+def not_hardcoded(sources_buf):
+    """factorials are computed, not hardcoded"""
+    for n in range(7, 21):
+        if re.search(rf"(?<!\d){math.factorial(n)}(?!\d)", sources_buf):
+            raise check50.Failure(f"Found the hardcoded value of {n}! in the "
+                    "source, it should be computed")
+
+@check50.check(compiles)
+def exit_code():
+    """program exits with status 0"""
+    check50.run("./factorial 10").exit(0)
+
+@check50.check(exists)
+def no_warnings(sources_buf):
+    """compiles without warnings (-Wall -Wextra -Werror)"""
+    # argc may legitimately be unused, don't flag it
+    check50.c.compile("factorial.c", exe_name="factorial_warn", cc="gcc",
+                      Wall=True, Wextra=True, Wno_unused_parameter=True,
+                      Werror=True)
