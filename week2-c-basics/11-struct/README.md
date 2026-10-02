@@ -5,7 +5,7 @@ struct timestamp {
     unsigned int hour;
     unsigned int minute;
     unsigned int second;
-}
+};
 ```
 
 Using this structure, write a C program adding two timestamps and displaying the result on the standard output.
@@ -15,15 +15,15 @@ Here are some output examples:
 
 ```bash
 # 5h11m44s + 12h30m3s = 17h41m47s
-./timestamp 5 11 44 12 30 3
+./struct 5 11 44 12 30 3
 17 41 47
 
 # 10h30m50s + 1h5m15s = 11h36m5s
-./timestamp 10 30 50 1 5 15
+./struct 10 30 50 1 5 15
 11 36 5
 
 # 14h12m5s + 22h5m0s = 36h17m5s
-./timestamp 14 12 5 22 5 0
+./struct 14 12 5 22 5 0
 36 17 5
 ```
 
