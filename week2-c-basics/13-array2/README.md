@@ -19,6 +19,7 @@ Then, the program iterates over the array and outputs if each number is even or 
 
 > **Modulo in C.**
 > The modulo operator in C is `%`, for example: `42 % 2` evaluates to `0` and `41 % 2` evaluates to `1`.
+> Beware of negative numbers: the result of `%` takes the sign of the left operand, so `-41 % 2` evaluates to `-1`.
 
 To check the correctness of your program, use a [suitable development environment](https://github.com/olivierpierre/comp26020-devcontainer/blob/master/README.md) with [check50 installed](exercise-set-1.html#installing-check50) and write your solution in a file named **`array2.c`**.
 In a terminal, with that file in the local directory, check with this command:
