@@ -3,10 +3,10 @@ The execution time of the `sleep` function is measured and displayed. Examples o
 
 ```shell
 ./time 3
-sleep duration: 3.000082 seconds
+sleep duration: 3.000000082 seconds
 
 ./time 5
-sleep duration: 5.000108 seconds
+sleep duration: 5.000000108 seconds
 ```
 
 To check the correctness of your program, use a

@@ -4,7 +4,7 @@ import random
 import re
 import time
 
-OUTPUT_RE = r"sleep duration: (\d+\.\d{6}) seconds\n?"
+OUTPUT_RE = r"sleep duration: (\d+\.\d{9}) seconds\n?"
 
 # prepended to the student's source: sleep(n) is replaced by a sleep of
 # n + 1.5 seconds, the displayed duration must follow if it is really measured
@@ -36,7 +36,7 @@ def check_sleep(exe, n, slept=None):
     m = re.fullmatch(OUTPUT_RE, out)
     if not m:
         raise check50.Failure(f"With argument {n}: expected output of the form "
-                f"'sleep duration: {int(slept)}.xxxxxx seconds' (with 6 decimals), "
+                f"'sleep duration: {int(slept)}.xxxxxxxxx seconds' (with 9 decimals), "
                 f"got {out!r}")
     measured = float(m.group(1))
     if elapsed < slept - 0.05:
@@ -48,7 +48,7 @@ def check_sleep(exe, n, slept=None):
                 f"{m.group(1)}, it should be slightly more than {slept} "
                 "seconds (a call to sleep never takes exactly the requested "
                 "time): measure the time with a sub-second precision clock "
-                "(e.g. gettimeofday or clock_gettime) and do not use integer "
+                "(e.g. clock_gettime) and do not use integer "
                 "divisions in the computation")
     if measured > elapsed + 0.05:
         raise check50.Failure(f"With argument {n}: displayed duration is "
