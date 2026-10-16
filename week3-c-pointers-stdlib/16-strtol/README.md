@@ -1,4 +1,4 @@
-The program [strtol.c](src/strtol.c) converts a string entered by the user into an integer and prints it on the standard output.
+The program [strtol.c](./comp26020-problems/week3-c-pointers-stdlib/16-strtol/strol.c) converts a string entered by the user into an integer and prints it on the standard output.
 The conversion is realised with `atoi`, and as such it is not robust in case of malformed strings as well as under/overflows.
 
 Modify the implementation of the function `convert_and_print` in this program to use `strtol` for the conversion rather than `atoi`, and make the program more robust against improper inputs.
